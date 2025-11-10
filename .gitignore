@@ -6,4 +6,3 @@ logging/
 testing.py
 config/gsheet_key.json
 config/booking_urls.json
-run_hotel_scrap.sh
