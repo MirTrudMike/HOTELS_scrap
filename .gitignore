@@ -1,7 +1,6 @@
 .env
-base
 .venv
-.idea
+.idea/
 __pycache__/
 logging/
 testing.py
