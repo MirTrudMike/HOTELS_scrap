@@ -1,9 +1,22 @@
 from loguru import logger
 import os
 from functions.file_functions import BASE_DIR
+import sys
 
 
 def setup_loguru():
+    # Убираем стандартный sink Loguru, чтобы избежать дублирования выводов и DEBUG в консоли
+    logger.remove()
+
+    # Логи в терминал (INFO и выше)
+    logger.add(
+        sys.stdout,
+        level="INFO",
+        format="{time:YYYY-MM-DD HH:mm:ss} | {level: <8} | {name: <35} | {message}",
+        backtrace=False,
+        diagnose=False,
+    )
+
     # Основной логгер (INFO и выше)
     logger.add(
         f"{os.path.join(BASE_DIR, '..', 'logging', 'logs.log')}",
