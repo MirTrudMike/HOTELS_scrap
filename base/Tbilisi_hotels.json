@@ -12049,5 +12049,70 @@
         "date_parsed": "23.03.2026",
         "link": "https://www.booking.com/hotel/ge/vista-bilisi.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/838289880.jpg?k=7e08efd238bb86af02688df84cda04ad667a82842e86889f2299f1dfbf30140f&o="
+    },
+    {
+        "id": "kvl",
+        "name": "Kvl Hotel",
+        "stars": 4,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "28.03.2026",
+        "link": "https://www.booking.com/hotel/ge/kvl.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/840296852.jpg?k=d31e30d129b51fc1da6b01931b5614bd9eb1e33d569892a30032971ccba5cce5&o="
+    },
+    {
+        "id": "new-classic-apartment",
+        "name": "New Classic Hotel",
+        "stars": 0,
+        "rating": 10.0,
+        "number_of_reviews": 2,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "28.03.2026",
+        "link": "https://www.booking.com/hotel/ge/new-classic-apartment.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/837572805.jpg?k=77dcad85dfe8927d0fb6a711bae4d7243a0e5ab13188d81bed1c49a08e33236f&o="
+    },
+    {
+        "id": "annas-garden",
+        "name": "Anna's Garden Hotel",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "28.03.2026",
+        "link": "https://www.booking.com/hotel/ge/annas-garden.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/841896511.jpg?k=9cadc5597937d8aea549ef276c122bb9910b3cee70915bde3300be0f90ccca8d&o="
+    },
+    {
+        "id": "almeto-tbilisi",
+        "name": "Almeto Hotel & Rooms",
+        "stars": 3,
+        "rating": 7.9,
+        "number_of_reviews": 17,
+        "district": null,
+        "city": null,
+        "new_mark": false,
+        "date_parsed": "28.03.2026",
+        "link": "https://www.booking.com/hotel/ge/almeto-tbilisi.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/340347800.jpg?k=4a296c71b2dc270bc45ae27ab31bf8d94f4ff36f7925899a1686c6f3617de0be&o="
+    },
+    {
+        "id": "point-boutique",
+        "name": "Point boutique hotel",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "28.03.2026",
+        "link": "https://www.booking.com/hotel/ge/point-boutique.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/841775447.jpg?k=3709ca4126af3ff18a45ae9ce45aa7fedb2933a3ab54f484c432bd06b4a08261&o="
     }
 ]
