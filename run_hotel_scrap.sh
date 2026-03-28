@@ -1,3 +1,4 @@
-source /home/mirtrudmike/Projects/HOTELS_scrap/.venv/bin/activate
-python3 /home/mirtrudmike/Projects/HOTELS_scrap/gui.py
-read -p "Press Enter, to finish..."
+#!/bin/bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/.venv/bin/activate"
+python3 "$SCRIPT_DIR/gui.py"
