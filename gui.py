@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Hotels Scraper GUI — modern dark interface for Booking.com scraper."""
 
+import math
 import tkinter as tk
 import customtkinter as ctk
 import json
@@ -17,37 +18,61 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.logging_config import setup_loguru
 
-# ── Color palette (dark purple-grey theme) ────────────────────────────────────
+# ── Color palette ─────────────────────────────────────────────────────────────
+# Backgrounds: deep blue-black with purple undertone
+# Accents: Tailwind violet-600/400 — vivid, not muddy
 C = {
-    "bg":           "#0e0e1c",
-    "panel":        "#13132a",
-    "card":         "#1b1b38",
-    "card_hover":   "#22224a",
-    "card_sel":     "#2a1f52",
-    "border":       "#2e2e55",
-    "border_sel":   "#7b5ea7",
-    "accent":       "#7b5ea7",
-    "accent_h":     "#9d7fd4",
-    "accent_dim":   "#3d2d72",
-    "text":         "#dcdcf8",
-    "text_dim":     "#9090b8",
-    "text_muted":   "#4a4a70",
-    "success":      "#4ec9a0",
-    "error":        "#e05468",
-    "warning":      "#e0a844",
-    "log_bg":       "#080814",
-    "log_time":     "#4a4a6a",
-    "log_info":     "#7878c0",
-    "log_success":  "#4ec9a0",
-    "log_error":    "#e05468",
-    "log_warning":  "#e0a844",
-    "log_sep":      "#2a2a50",
-    "toggle_off":   "#2e2e55",
-    "toggle_on":    "#7b5ea7",
+    "bg":           "#09090f",
+    "panel":        "#0f0f1f",
+    "card":         "#15152c",
+    "card_hover":   "#1b1b36",
+    "card_sel":     "#1e1040",
+    "border":       "#26264a",
+    "border_sel":   "#7c3aed",
+
+    "accent":       "#7c3aed",   # violet-600
+    "accent_h":     "#a78bfa",   # violet-400  (hover / highlights)
+    "accent_dim":   "#3b0f8c",   # violet-900  (subtle fills)
+
+    # Run-button breathing range
+    # Run button — warm amber (pairs well with purple, not eye-burning)
+    "btn_run":      "#7a3e16",   # base amber-sienna
+    "btn_run_h":    "#b06030",   # hover amber
+    "breathe_lo":   "#3a1c08",   # dark burnt ember
+    "breathe_hi":   "#9a5020",   # warm amber peak
+
+    "text":         "#eeeeff",
+    "text_dim":     "#7878a8",
+    "text_muted":   "#38385e",
+
+    "success":      "#10b981",   # emerald-500
+    "error":        "#ef4444",   # red-500
+    "warning":      "#f59e0b",   # amber-500
+
+    "log_bg":       "#05050e",
+    "log_time":     "#2e2e52",
+    "log_info":     "#818cf8",   # indigo-400
+    "log_success":  "#10b981",
+    "log_error":    "#ef4444",
+    "log_warning":  "#f59e0b",
+    "log_sep":      "#18183a",
+
+    "toggle_off":   "#26264a",
+    "toggle_on":    "#7c3aed",
 }
 
 FONT      = "Segoe UI"
 FONT_MONO = "Consolas"
+
+
+def _lerp_color(c1: str, c2: str, t: float) -> str:
+    """Linearly interpolate between two #rrggbb hex colors."""
+    r1, g1, b1 = int(c1[1:3], 16), int(c1[3:5], 16), int(c1[5:7], 16)
+    r2, g2, b2 = int(c2[1:3], 16), int(c2[3:5], 16), int(c2[5:7], 16)
+    r = int(r1 + (r2 - r1) * t)
+    g = int(g1 + (g2 - g1) * t)
+    b = int(b1 + (b2 - b1) * t)
+    return f"#{r:02x}{g:02x}{b:02x}"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -599,7 +624,7 @@ class CityCard(ctk.CTkFrame):
     def _hover_on(self, _=None):
         if not self._selected:
             self.configure(fg_color=C["card_hover"])
-        self._menu_btn.configure(text_color=C["text_muted"])
+        self._menu_btn.configure(text_color=C["accent_h"])
 
     def _hover_off(self, event=None):
         # Don't hide if mouse moved to the menu button itself
@@ -722,6 +747,10 @@ class HotelScraperGUI(ctk.CTk):
         self._log_q: queue.Queue  = queue.Queue()
         self._cards: dict[str, CityCard] = {}
         self._headless_var         = tk.BooleanVar(value=False)
+        self._breathe_active       = False
+        self._breathe_step         = 0
+        self._breathe_gen          = 0   # incremented each start; stale ticks self-cancel
+        self._stop_event           = threading.Event()
 
         self._setup_window()
         self._setup_log_sink()
@@ -866,7 +895,7 @@ class HotelScraperGUI(ctk.CTk):
         self._run_btn = ctk.CTkButton(
             ctrl, text="▶   Run scraper",
             height=52,
-            fg_color=C["accent"], hover_color=C["accent_h"],
+            fg_color=C["btn_run"], hover_color=C["btn_run_h"],
             text_color="white",
             font=ctk.CTkFont(family=FONT, size=15, weight="bold"),
             corner_radius=10, state="disabled",
@@ -877,7 +906,7 @@ class HotelScraperGUI(ctk.CTk):
         self._stop_btn = ctk.CTkButton(
             ctrl, text="■   Stop",
             height=36,
-            fg_color=C["card_hover"], hover_color=C["error"],
+            fg_color=C["card_hover"], hover_color="#7a2535",
             text_color=C["text_dim"],
             font=ctk.CTkFont(family=FONT, size=13),
             corner_radius=10, state="disabled",
@@ -989,6 +1018,7 @@ class HotelScraperGUI(ctk.CTk):
             text_color=C["text"],
         )
         self._run_btn.configure(state="normal")
+        self._start_breathe()
 
     # ── Add city dialog ───────────────────────────────────────────────────────
     def _open_add_dialog(self):
@@ -1052,6 +1082,38 @@ class HotelScraperGUI(ctk.CTk):
         else:
             self._headless_lbl.configure(text="Browser: visible",  text_color=C["text_muted"])
 
+    # ── Run button breathing animation ────────────────────────────────────────
+    def _start_breathe(self):
+        """Pulse the Run button with a warm amber glow while idle.
+        Uses a generation counter so switching cities never spawns duplicate loops.
+        """
+        self._breathe_active = True
+        self._breathe_step   = 0
+        self._breathe_gen   += 1
+        self._breathe_tick(self._breathe_gen)
+
+    def _stop_breathe(self):
+        self._breathe_active = False
+        self._breathe_gen   += 1   # invalidates any in-flight tick
+        try:
+            self._run_btn.configure(fg_color=C["btn_run"])
+        except Exception:
+            pass
+
+    def _breathe_tick(self, gen: int):
+        # Bail if this tick belongs to a superseded animation or scraper is running
+        if gen != self._breathe_gen or not self._breathe_active or self._running:
+            return
+        # Smooth sine: full cycle = 120 ticks × 20 ms = 2.4 s
+        t     = (math.sin(self._breathe_step * math.pi / 60) + 1) / 2
+        color = _lerp_color(C["breathe_lo"], C["breathe_hi"], t)
+        try:
+            self._run_btn.configure(fg_color=color)
+        except Exception:
+            return
+        self._breathe_step += 1
+        self.after(20, self._breathe_tick, gen)
+
     # ── Status label ──────────────────────────────────────────────────────────
     def _set_status(self, text: str, color: str = None):
         self._status_lbl.configure(
@@ -1070,6 +1132,8 @@ class HotelScraperGUI(ctk.CTk):
             return
 
         self._running = True
+        self._stop_event.clear()
+        self._stop_breathe()
         self._run_btn.configure(state="disabled")
         self._stop_btn.configure(state="normal")
         self._progress.start()
@@ -1127,11 +1191,16 @@ class HotelScraperGUI(ctk.CTk):
                 config,
                 headless=headless,
                 on_filter_fail=self._make_filter_fail_callback(),
+                stop_event=self._stop_event,
             ) as scraper:
                 cards = scraper.scrape(url=url, property_type="Hotels")
                 if not cards:
-                    logger.info(f"No cards found for {city}")
-                    self.after(0, self._done, False, "No cards found")
+                    if self._stop_event.is_set():
+                        logger.info("Scraping stopped by user")
+                        self.after(0, self._done, True, "Stopped by user")
+                    else:
+                        logger.info(f"No cards found for {city}")
+                        self.after(0, self._done, False, "No cards found")
                     return
                 updated_data, new_data = CardParser().parse(cards, old_data)
 
@@ -1155,6 +1224,7 @@ class HotelScraperGUI(ctk.CTk):
         self._stop_btn.configure(state="disabled")
         self._progress.stop()
         self._progress.set(0)
+        self._start_breathe()
 
         if success:
             self._set_status(f"Done — {message}", C["success"])
@@ -1166,11 +1236,10 @@ class HotelScraperGUI(ctk.CTk):
         self._log.separator()
 
     def _stop_scraper(self):
-        self._log.append(
-            self._now(), "WARNING",
-            "Stop requested — will finish after current operation",
-        )
+        self._stop_event.set()
+        self._log.append(self._now(), "WARNING", "Stop requested — finishing current operation...")
         self._set_status("Stopping...", C["warning"])
+        self._stop_btn.configure(state="disabled")
 
 
 # ─────────────────────────────────────────────────────────────────────────────

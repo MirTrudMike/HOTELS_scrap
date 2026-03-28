@@ -1,5 +1,6 @@
 import time
 import random
+import threading
 from dataclasses import dataclass
 from typing import Optional
 from loguru import logger
@@ -31,13 +32,19 @@ class BookingScraper:
         config: Optional[ScraperConfig] = None,
         headless: bool = False,
         on_filter_fail: Optional[callable] = None,
+        stop_event: Optional[threading.Event] = None,
     ):
         self._config          = config or ScraperConfig()
         self._headless        = headless
         # Callback called when filter cannot be applied.
         # Signature: () -> bool  (True = continue without filter, False = abort)
         self._on_filter_fail  = on_filter_fail
+        # Set this event externally to request a graceful stop mid-scrape
+        self._stop_event      = stop_event
         self._driver: Optional[webdriver.Firefox] = None
+
+    def _stop_requested(self) -> bool:
+        return self._stop_event is not None and self._stop_event.is_set()
 
     def __enter__(self):
         return self
@@ -55,7 +62,14 @@ class BookingScraper:
         """Loads page, applies filter, scrolls to load all cards, returns card elements."""
         try:
             self._driver = self._load_page(url)
+            if self._stop_requested():
+                logger.info("Stop requested — aborting after page load")
+                return []
+
             self._dismiss_overlays()
+            if self._stop_requested():
+                logger.info("Stop requested — aborting after overlay dismissal")
+                return []
 
             max_properties = self._try_filter_properties(property_type)
 
@@ -68,6 +82,10 @@ class BookingScraper:
                 else:
                     logger.info("Scraping aborted by user after filter failure")
                     return []
+
+            if self._stop_requested():
+                logger.info("Stop requested — aborting before scroll")
+                return []
 
             self._scroll_to_load_all(max_properties)
             return self._get_property_cards()
@@ -221,6 +239,10 @@ class BookingScraper:
 
         try:
             while scroll_attempt < max_attempts and self._is_driver_active():
+                if self._stop_requested():
+                    logger.info("Stop requested — halting scroll")
+                    return False
+
                 if not self._is_driver_active():
                     logger.critical("💀 Driver connection lost")
                     return False
@@ -242,6 +264,10 @@ class BookingScraper:
 
                 no_button_count = 0
                 while no_button_count < max_no_button_scroll and self._is_driver_active():
+                    if self._stop_requested():
+                        logger.info("Stop requested — halting scroll")
+                        return False
+
                     try:
                         if self._handle_load_more_button():
                             logger.debug("🔥 Load more button processed")
