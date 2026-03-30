@@ -12114,5 +12114,70 @@
         "date_parsed": "28.03.2026",
         "link": "https://www.booking.com/hotel/ge/point-boutique.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/841775447.jpg?k=3709ca4126af3ff18a45ae9ce45aa7fedb2933a3ab54f484c432bd06b4a08261&o="
+    },
+    {
+        "id": "davidl-tbilisi",
+        "name": "DavidL Hotel Tbilisi",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "29.03.2026",
+        "link": "https://www.booking.com/hotel/ge/davidl-tbilisi.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/840361374.jpg?k=d612ff917ab0df292fdbfea7f2811628eaac3bd5d21a3ce3a14ebbaee635e6bb&o="
+    },
+    {
+        "id": "avalbari-skyline-apartment",
+        "name": "Hotel Avlabari Skyline",
+        "stars": 0,
+        "rating": 10.0,
+        "number_of_reviews": 4,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "29.03.2026",
+        "link": "https://www.booking.com/hotel/ge/avalbari-skyline-apartment.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/838164573.jpg?k=99b2a4b259da7ac8c5d2acc620a7b8fb12a1774c4fa988389262593df8445798&o="
+    },
+    {
+        "id": "kristina-bilisi",
+        "name": "Old Town Quartet Boutique Hotel",
+        "stars": 0,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "29.03.2026",
+        "link": "https://www.booking.com/hotel/ge/kristina-bilisi.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/842735688.jpg?k=19d04d21d051e1f0a5ee425b7efaefd3f464a3b83462ddd49a79975c0ec4512e&o="
+    },
+    {
+        "id": "kinor-david-glatt-kosher",
+        "name": "Kinor David Glatt Kosher Hotel",
+        "stars": 4,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "29.03.2026",
+        "link": "https://www.booking.com/hotel/ge/kinor-david-glatt-kosher.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/769003611.jpg?k=07a15598b5723207feef90fb5dd6e260c430e2f47b086eb59bfe483dfce38188&o="
+    },
+    {
+        "id": "dynasty-tbilisi",
+        "name": "Dynasty",
+        "stars": 4,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "29.03.2026",
+        "link": "https://www.booking.com/hotel/ge/dynasty-tbilisi.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/837300754.jpg?k=a25b79cea332c7d095cc38adf9c38518a62ca84bb9ae195bd8f38621a9a27e86&o="
     }
 ]
