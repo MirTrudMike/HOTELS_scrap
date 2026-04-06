@@ -24,7 +24,7 @@ def main():
         updated_data, new_data = CardParser().parse(cards, old_data)
 
     storage.save_base(city, 'hotels', updated_data)
-
+2
     if new_data:
         logger.success(f"PROCESSED {len(new_data)} NEW properties")
         GoogleSheetsManager().update(new_data, city)

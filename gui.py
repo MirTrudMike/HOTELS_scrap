@@ -684,12 +684,13 @@ class LogPanel(ctk.CTkFrame):
         scroll.pack(side="right", fill="y")
         self._txt.pack(side="left", fill="both", expand=True, padx=(8, 0))
 
-        self._txt.tag_config("TIME",    foreground=C["log_time"])
-        self._txt.tag_config("INFO",    foreground=C["log_info"])
-        self._txt.tag_config("SUCCESS", foreground=C["log_success"])
-        self._txt.tag_config("ERROR",   foreground=C["log_error"])
-        self._txt.tag_config("WARNING", foreground=C["log_warning"])
-        self._txt.tag_config("SEP",     foreground=C["log_sep"])
+        self._txt.tag_config("TIME",     foreground=C["log_time"])
+        self._txt.tag_config("INFO",     foreground=C["log_info"])
+        self._txt.tag_config("SUCCESS",  foreground=C["log_success"])
+        self._txt.tag_config("ERROR",    foreground=C["log_error"])
+        self._txt.tag_config("WARNING",  foreground=C["log_warning"])
+        self._txt.tag_config("SEP",      foreground=C["log_sep"])
+        self._txt.tag_config("PROGRESS", foreground="#64b5f6")
 
     def append(self, time_str: str, level: str, message: str):
         self._txt.configure(state="normal")
@@ -700,7 +701,29 @@ class LogPanel(ctk.CTkFrame):
         self._txt.see("end")
         self._txt.configure(state="disabled")
 
+    def update_progress(self, time_str: str, bar_str: str):
+        """Insert or replace the single in-place progress bar line."""
+        self._txt.configure(state="normal")
+        content = f"[{time_str}]  {bar_str}\n"
+        ranges = self._txt.tag_ranges("PROGRESS")
+        if ranges:
+            self._txt.delete(ranges[0], ranges[-1])
+            self._txt.insert(ranges[0], content, "PROGRESS")
+        else:
+            self._txt.insert("end", content, "PROGRESS")
+        self._txt.see("end")
+        self._txt.configure(state="disabled")
+
+    def reset_progress(self):
+        """Remove the progress bar line (call when a new scrape starts)."""
+        ranges = self._txt.tag_ranges("PROGRESS")
+        if ranges:
+            self._txt.configure(state="normal")
+            self._txt.delete(ranges[0], ranges[-1])
+            self._txt.configure(state="disabled")
+
     def separator(self, label: str = ""):
+        self.reset_progress()
         self._txt.configure(state="normal")
         if label:
             half = (56 - len(label)) // 2
@@ -784,14 +807,18 @@ class HotelScraperGUI(ctk.CTk):
                 rec["time"].strftime("%H:%M:%S"),
                 rec["level"].name,
                 rec["message"],
+                rec["extra"].get("is_progress", False),
             ))
         logger.add(_sink, level="INFO", format="{message}")
 
     def _drain_log_queue(self):
         try:
             while True:
-                t, lvl, msg = self._log_q.get_nowait()
-                self._log.append(t, lvl, msg)
+                t, lvl, msg, is_progress = self._log_q.get_nowait()
+                if is_progress:
+                    self._log.update_progress(t, msg)
+                else:
+                    self._log.append(t, lvl, msg)
         except queue.Empty:
             pass
         self.after(80, self._drain_log_queue)

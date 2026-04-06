@@ -4,6 +4,15 @@ import threading
 from dataclasses import dataclass
 from typing import Optional
 from loguru import logger
+from rich.console import Console
+from rich.progress import (
+    Progress,
+    BarColumn,
+    TextColumn,
+    TimeElapsedColumn,
+    SpinnerColumn,
+    MofNCompleteColumn,
+)
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -230,6 +239,15 @@ class BookingScraper:
                     raise RuntimeError(f"Failed to load cards: {str(e)}")
                 time.sleep(cfg.retry_delay)
 
+    @staticmethod
+    def _make_progress_bar(current: int, total: int, elapsed: float) -> str:
+        """Return a plain ASCII progress bar string (no ANSI) for GUI display."""
+        pct = current / total if total > 0 else 0.0
+        filled = int(38 * pct)
+        bar = "█" * filled + "░" * (38 - filled)
+        m, s = divmod(int(elapsed), 60)
+        return f"▐{bar}▌  {current}/{total}  {pct * 100:.0f}%  ⏱ {m:02d}:{s:02d}"
+
     def _scroll_to_load_all(self, max_properties: int) -> bool:
         logger.info("🚀 Starting page scrolling")
         scroll_attempt = 0
@@ -237,86 +255,108 @@ class BookingScraper:
         max_no_button_scroll = 5
         consecutive_no_changes = 0
 
+        _console = Console(stderr=True, force_terminal=True)
+        progress = Progress(
+            SpinnerColumn(style="bold magenta"),
+            TextColumn("[bold cyan]Hotels loaded", justify="left"),
+            BarColumn(bar_width=40, style="bright_blue", complete_style="bright_green"),
+            MofNCompleteColumn(),
+            TextColumn("[bold yellow]{task.percentage:>3.0f}%"),
+            TimeElapsedColumn(),
+            transient=False,
+            console=_console,
+            refresh_per_second=4,
+        )
+        task_id = progress.add_task("scrolling", total=max_properties, completed=0)
+        _scroll_start = time.time()
+
         try:
-            while scroll_attempt < max_attempts and self._is_driver_active():
-                if self._stop_requested():
-                    logger.info("Stop requested — halting scroll")
-                    return False
-
-                if not self._is_driver_active():
-                    logger.critical("💀 Driver connection lost")
-                    return False
-
-                try:
-                    current_cards = self._driver.find_elements(
-                        By.CSS_SELECTOR, '[data-testid="property-card-container"]'
-                    )
-                except Exception as e:
-                    logger.error(f"Element search failed: {str(e)}")
-                    return False
-
-                current_count = len(current_cards)
-                logger.info(f"NOW {current_count} of {max_properties} loaded")
-
-                if current_count >= max_properties:
-                    logger.success(f"✅ Target reached! Found {current_count}/{max_properties} properties")
-                    return True
-
-                no_button_count = 0
-                while no_button_count < max_no_button_scroll and self._is_driver_active():
+            with progress:
+                logger.bind(is_progress=True).info(
+                    self._make_progress_bar(0, max_properties, 0.0)
+                )
+                while scroll_attempt < max_attempts and self._is_driver_active():
                     if self._stop_requested():
                         logger.info("Stop requested — halting scroll")
                         return False
 
+                    if not self._is_driver_active():
+                        logger.critical("💀 Driver connection lost")
+                        return False
+
                     try:
-                        if self._handle_load_more_button():
-                            logger.debug("🔥 Load more button processed")
-                            break
-
-                        self._driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                        scroll_attempt += 1
-                        no_button_count += 1
-
-                        logger.debug(
-                            f"🔄 Scroll #{scroll_attempt} (attempt {no_button_count}/{max_no_button_scroll})"
+                        current_cards = self._driver.find_elements(
+                            By.CSS_SELECTOR, '[data-testid="property-card-container"]'
                         )
+                    except Exception as e:
+                        logger.error(f"Element search failed: {str(e)}")
+                        return False
 
-                        delay = random.uniform(2.0, 4.0) if scroll_attempt > 10 else 5.0
-                        time.sleep(delay)
+                    current_count = len(current_cards)
+                    progress.update(task_id, completed=current_count)
+                    logger.bind(is_progress=True).info(
+                        self._make_progress_bar(current_count, max_properties, time.time() - _scroll_start)
+                    )
+
+                    if current_count >= max_properties:
+                        logger.success(f"✅ Target reached! Found {current_count}/{max_properties} properties")
+                        return True
+
+                    no_button_count = 0
+                    while no_button_count < max_no_button_scroll and self._is_driver_active():
+                        if self._stop_requested():
+                            logger.info("Stop requested — halting scroll")
+                            return False
 
                         try:
-                            new_count = len(self._driver.find_elements(
-                                By.CSS_SELECTOR, '[data-testid="property-card-container"]'
-                            ))
-                        except Exception as e:
-                            logger.error(f"Count check failed: {str(e)}")
-                            return False
+                            if self._handle_load_more_button():
+                                logger.debug("🔥 Load more button processed")
+                                break
 
-                        if new_count == current_count:
-                            consecutive_no_changes += 1
-                            if consecutive_no_changes >= 3:
-                                logger.info("⚠️ No changes detected in 3 consecutive scrolls")
+                            self._driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                            scroll_attempt += 1
+                            no_button_count += 1
+
+                            logger.debug(
+                                f"🔄 Scroll #{scroll_attempt} (attempt {no_button_count}/{max_no_button_scroll})"
+                            )
+
+                            delay = random.uniform(2.0, 4.0) if scroll_attempt > 10 else 5.0
+                            time.sleep(delay)
+
+                            try:
+                                new_count = len(self._driver.find_elements(
+                                    By.CSS_SELECTOR, '[data-testid="property-card-container"]'
+                                ))
+                            except Exception as e:
+                                logger.error(f"Count check failed: {str(e)}")
                                 return False
-                        else:
-                            consecutive_no_changes = 0
-                            current_count = new_count
 
-                    except Exception as e:
-                        logger.error(f"🚨 Scroll error: {str(e)}")
-                        if "without establishing a connection" in str(e):
-                            logger.critical("💥 Connection lost, aborting")
-                            return False
-                        if no_button_count >= max_no_button_scroll // 2:
-                            return False
-                        time.sleep(5)
-                        continue
+                            if new_count == current_count:
+                                consecutive_no_changes += 1
+                                if consecutive_no_changes >= 3:
+                                    logger.info("⚠️ No changes detected in 3 consecutive scrolls")
+                                    return False
+                            else:
+                                consecutive_no_changes = 0
+                                current_count = new_count
 
-                if no_button_count >= max_no_button_scroll:
-                    logger.warning(f"⛔ Reached {max_no_button_scroll} scrolls without button")
-                    return False
+                        except Exception as e:
+                            logger.error(f"🚨 Scroll error: {str(e)}")
+                            if "without establishing a connection" in str(e):
+                                logger.critical("💥 Connection lost, aborting")
+                                return False
+                            if no_button_count >= max_no_button_scroll // 2:
+                                return False
+                            time.sleep(5)
+                            continue
 
-            logger.error(f"🔴 Max attempts reached ({max_attempts})")
-            return False
+                    if no_button_count >= max_no_button_scroll:
+                        logger.warning(f"⛔ Reached {max_no_button_scroll} scrolls without button")
+                        return False
+
+                logger.error(f"🔴 Max attempts reached ({max_attempts})")
+                return False
 
         except Exception as main_error:
             logger.critical(f"💀 Critical error: {str(main_error)}")

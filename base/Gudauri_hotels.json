@@ -1818,5 +1818,18 @@
         "date_parsed": "28.03.2026",
         "link": "https://www.booking.com/hotel/ge/gudauri-diamond.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/242665839.jpg?k=6120451356203a97ec5aa9158d7224509e71a502cd1cf93c4e62275e78f7046d&o="
+    },
+    {
+        "id": "gudauri-apartments-gudauri3",
+        "name": "Premium New Gudauri Apartments with Balcony & Gondola Views",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": false,
+        "date_parsed": "07.04.2026",
+        "link": "https://www.booking.com/hotel/ge/gudauri-apartments-gudauri3.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/843502000.jpg?k=ae585e907efbc5b54081e63175a136ea1c8666902e15ef73d499ac18b6ab870c&o="
     }
 ]
