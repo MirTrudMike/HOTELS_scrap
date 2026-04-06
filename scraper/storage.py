@@ -32,6 +32,11 @@ class DataStorage:
             with open(path, mode='r') as f:
                 raw = json.load(f)
             return [HotelData.from_dict(h) for h in raw] if raw else []
+        except FileNotFoundError:
+            logger.info(f"Base file for {city} {property_type} not found — creating empty base file")
+            with open(path, mode='w') as f:
+                json.dump([], f)
+            return []
         except Exception as e:
             logger.error(f"❌ ERROR READING base file for {city} {property_type}: {e}")
             raise

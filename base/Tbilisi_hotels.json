@@ -12179,5 +12179,70 @@
         "date_parsed": "29.03.2026",
         "link": "https://www.booking.com/hotel/ge/dynasty-tbilisi.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/837300754.jpg?k=a25b79cea332c7d095cc38adf9c38518a62ca84bb9ae195bd8f38621a9a27e86&o="
+    },
+    {
+        "id": "anbani-city-center",
+        "name": "Central Vibe apartments",
+        "stars": 0,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": false,
+        "date_parsed": "31.03.2026",
+        "link": "https://www.booking.com/hotel/ge/anbani-city-center.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/214399762.jpg?k=518767747c5960744e0ad81b6084f5c90294a60c5d4be9c1786c2db0bd516de4&o="
+    },
+    {
+        "id": "ngardeni-boutique",
+        "name": "Ngardeni boutique",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "31.03.2026",
+        "link": "https://www.booking.com/hotel/ge/ngardeni-boutique.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/843987778.jpg?k=7a79bbcb204fde467315122cafc420f77363fd59d2678ca4709eb9f03c5e041e&o="
+    },
+    {
+        "id": "renar-airport-lux",
+        "name": "Renar Airport Lux Hotel",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "31.03.2026",
+        "link": "https://www.booking.com/hotel/ge/renar-airport-lux.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/843945231.jpg?k=2bcce3f6253c94070eba7e3b6ec218b207ae63f57497186471c3b1e67881f88e&o="
+    },
+    {
+        "id": "happy-lounge",
+        "name": "Capsule Hotel Happy lounge",
+        "stars": 0,
+        "rating": 8.5,
+        "number_of_reviews": 216,
+        "district": null,
+        "city": null,
+        "new_mark": false,
+        "date_parsed": "03.04.2026",
+        "link": "https://www.booking.com/hotel/ge/happy-lounge.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/790359599.jpg?k=7f5428137056f7c336ca1863bdcb3b228076ea70957b5e302ae11b16590d5d74&o="
+    },
+    {
+        "id": "warm-stay",
+        "name": "Hotel Warm Stay",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "07.04.2026",
+        "link": "https://www.booking.com/hotel/ge/warm-stay.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/846173843.jpg?k=7eb3dfdd471853b2a4bd0e4bc374518363dbabddc707f86fbdc6a9b4aab455aa&o="
     }
 ]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hotels Scraper GUI — modern dark interface for Booking.com scraper."""
+"""Hotels Scraper GUI — Obsidian Pulse design."""
 
 import math
 import tkinter as tk
@@ -9,7 +9,7 @@ import sys
 import threading
 import queue
 from pathlib import Path
-from typing import Optional
+from datetime import datetime
 from loguru import logger
 
 # ── Project root ──────────────────────────────────────────────────────────────
@@ -18,47 +18,52 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.logging_config import setup_loguru
 
-# ── Color palette ─────────────────────────────────────────────────────────────
-# Backgrounds: deep blue-black with purple undertone
-# Accents: Tailwind violet-600/400 — vivid, not muddy
+# ── Color palette — Obsidian Pulse ────────────────────────────────────────────
 C = {
-    "bg":           "#09090f",
-    "panel":        "#0f0f1f",
-    "card":         "#15152c",
-    "card_hover":   "#1b1b36",
-    "card_sel":     "#1e1040",
-    "border":       "#26264a",
-    "border_sel":   "#7c3aed",
+    # Surface depth layers
+    "bg":           "#10141a",   # surface — main background
+    "panel":        "#181c22",   # surface-container-low — sidebar, panels
+    "card":         "#1c2026",   # surface-container — cards, dialogs
+    "card_hover":   "#262a31",   # surface-container-high
+    "card_sel":     "#31353c",   # surface-container-highest — active
+    "log_bg":       "#0a0e14",   # surface-container-lowest — terminal
 
-    "accent":       "#7c3aed",   # violet-600
-    "accent_h":     "#a78bfa",   # violet-400  (hover / highlights)
-    "accent_dim":   "#3b0f8c",   # violet-900  (subtle fills)
+    # Borders
+    "border":       "#3b4a3d",
+    "border_sel":   "#75ff9e",
 
-    # Run-button breathing range
-    # Run button — warm amber (pairs well with purple, not eye-burning)
-    "btn_run":      "#7a3e16",   # base amber-sienna
-    "btn_run_h":    "#b06030",   # hover amber
-    "breathe_lo":   "#3a1c08",   # dark burnt ember
-    "breathe_hi":   "#9a5020",   # warm amber peak
+    # Primary accent — neon green (kinetic)
+    "accent":       "#75ff9e",
+    "accent_h":     "#00e676",
+    "accent_dim":   "#1a3d24",
 
-    "text":         "#eeeeff",
-    "text_dim":     "#7878a8",
-    "text_muted":   "#38385e",
+    # Run button breathing (green-based)
+    "btn_run":      "#006d35",
+    "btn_run_h":    "#009950",
+    "breathe_lo":   "#004a25",
+    "breathe_hi":   "#00b358",
 
-    "success":      "#10b981",   # emerald-500
-    "error":        "#ef4444",   # red-500
-    "warning":      "#f59e0b",   # amber-500
+    # Text hierarchy
+    "text":         "#dfe2eb",   # on-surface
+    "text_dim":     "#b8c9d3",   # secondary
+    "text_muted":   "#455a46",   # very muted
 
-    "log_bg":       "#05050e",
-    "log_time":     "#2e2e52",
-    "log_info":     "#818cf8",   # indigo-400
-    "log_success":  "#10b981",
-    "log_error":    "#ef4444",
+    # Status colors
+    "success":      "#75ff9e",
+    "error":        "#ffb4ab",
+    "warning":      "#f59e0b",
+
+    # Log terminal colors
+    "log_time":     "#2e4035",
+    "log_info":     "#b8c9d3",
+    "log_success":  "#75ff9e",
+    "log_error":    "#ffb4ab",
     "log_warning":  "#f59e0b",
-    "log_sep":      "#18183a",
+    "log_sep":      "#1c2e22",
 
-    "toggle_off":   "#26264a",
-    "toggle_on":    "#7c3aed",
+    # Toggle switch
+    "toggle_off":   "#3b4b53",
+    "toggle_on":    "#75ff9e",
 }
 
 FONT      = "Segoe UI"
@@ -79,24 +84,19 @@ def _lerp_color(c1: str, c2: str, t: float) -> str:
 #  Filter Warning Dialog
 # ─────────────────────────────────────────────────────────────────────────────
 class FilterWarningDialog(ctk.CTkToplevel):
-    """Shown when the property-type filter fails to apply.
-    Blocks the scraper thread via the provided threading.Event until the user decides.
-    """
+    """Shown when the property-type filter fails to apply."""
 
     def __init__(self, parent, event: threading.Event, result: list):
         super().__init__(parent)
         self._event  = event
-        self._result = result  # mutable list; result[0] = True (continue) / False (abort)
+        self._result = result
 
         self.title("Filter Warning")
         self.geometry("500x310")
         self.configure(fg_color=C["card"])
         self.resizable(False, False)
         self.transient(parent)
-        # Prevent closing via [X] without choosing
         self.protocol("WM_DELETE_WINDOW", self._on_abort)
-
-        # Defer build — CTkToplevel needs one event-loop tick to fully initialize
         self.after(20, self._deferred_init)
 
     def _deferred_init(self):
@@ -111,24 +111,21 @@ class FilterWarningDialog(ctk.CTkToplevel):
         self.lift()
 
     def _build(self):
-        # Warning badge row
         badge_row = ctk.CTkFrame(self, fg_color="transparent")
         badge_row.pack(fill="x", padx=28, pady=(24, 0))
 
         badge = ctk.CTkFrame(
-            badge_row,
-            fg_color="#3a1f10", corner_radius=10,
-            border_width=1, border_color="#b05020",
+            badge_row, fg_color="#1a2e1a", corner_radius=10,
+            border_width=1, border_color=C["border"],
         )
         badge.pack(anchor="w")
 
         ctk.CTkLabel(
             badge, text="  ⚠  Filter not applied  ",
             font=ctk.CTkFont(family=FONT, size=13, weight="bold"),
-            text_color="#e08040",
+            text_color=C["warning"],
         ).pack(padx=4, pady=6)
 
-        # Main message
         ctk.CTkLabel(
             self,
             text=(
@@ -136,8 +133,7 @@ class FilterWarningDialog(ctk.CTkToplevel):
                 "all retry attempts."
             ),
             font=ctk.CTkFont(family=FONT, size=14),
-            text_color=C["text"],
-            justify="left",
+            text_color=C["text"], justify="left",
         ).pack(anchor="w", padx=28, pady=(16, 4))
 
         ctk.CTkLabel(
@@ -147,38 +143,31 @@ class FilterWarningDialog(ctk.CTkToplevel):
                 "other property types may be included in the results."
             ),
             font=ctk.CTkFont(family=FONT, size=13),
-            text_color=C["text_dim"],
-            justify="left",
-        ).pack(anchor="w", padx=28, pady=(0, 0))
+            text_color=C["text_dim"], justify="left",
+        ).pack(anchor="w", padx=28)
 
-        # Divider
         ctk.CTkFrame(self, fg_color=C["border"], height=1).pack(
             fill="x", padx=24, pady=(20, 20)
         )
 
-        # Buttons
         btns = ctk.CTkFrame(self, fg_color="transparent")
         btns.pack(fill="x", padx=28, pady=(0, 24))
 
         ctk.CTkButton(
-            btns, text="Stop scraper",
-            width=140, height=42,
+            btns, text="Stop scraper", width=140, height=42,
             fg_color=C["card_hover"], hover_color=C["error"],
             text_color=C["text_dim"],
             font=ctk.CTkFont(family=FONT, size=14),
-            corner_radius=9,
-            command=self._on_abort,
+            corner_radius=9, command=self._on_abort,
         ).pack(side="right", padx=(10, 0))
 
         ctk.CTkButton(
-            btns, text="Continue without filter",
-            width=190, height=42,
-            fg_color="#5a3500", hover_color="#7a4800",
-            text_color="#e0a844",
-            border_width=1, border_color="#7a4800",
+            btns, text="Continue without filter", width=190, height=42,
+            fg_color=C["accent_dim"], hover_color=C["accent"],
+            text_color=C["accent"],
+            border_width=1, border_color=C["border"],
             font=ctk.CTkFont(family=FONT, size=14, weight="bold"),
-            corner_radius=9,
-            command=self._on_continue,
+            corner_radius=9, command=self._on_continue,
         ).pack(side="right")
 
     def _on_continue(self):
@@ -205,8 +194,6 @@ class AddCityDialog(ctk.CTkToplevel):
         self.configure(fg_color=C["card"])
         self.resizable(False, False)
         self.transient(parent)
-
-        # Defer build — CTkToplevel needs one event-loop tick to fully initialize
         self.after(20, self._deferred_init)
 
     def _deferred_init(self):
@@ -225,7 +212,7 @@ class AddCityDialog(ctk.CTkToplevel):
         pad = {"padx": 32}
 
         ctk.CTkLabel(
-            self, text="Add new city / filter",
+            self, text="Add new city",
             font=ctk.CTkFont(family=FONT, size=17, weight="bold"),
             text_color=C["text"], anchor="w",
         ).pack(fill="x", pady=(26, 0), **pad)
@@ -235,9 +222,9 @@ class AddCityDialog(ctk.CTkToplevel):
         )
 
         ctk.CTkLabel(
-            self, text="City name or filter label",
-            font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text_dim"], anchor="w",
+            self, text="CITY NAME OR FILTER LABEL",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["accent"], anchor="w",
         ).pack(fill="x", **pad)
 
         self._name = ctk.CTkEntry(
@@ -250,9 +237,9 @@ class AddCityDialog(ctk.CTkToplevel):
         self._name.pack(fill="x", pady=(5, 16), **pad)
 
         ctk.CTkLabel(
-            self, text="Booking.com search URL",
-            font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text_dim"], anchor="w",
+            self, text="BOOKING.COM SEARCH URL",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["accent"], anchor="w",
         ).pack(fill="x", **pad)
 
         self._url = ctk.CTkEntry(
@@ -277,8 +264,9 @@ class AddCityDialog(ctk.CTkToplevel):
 
         ctk.CTkButton(
             btns, text="Save", width=150, height=40,
-            fg_color=C["accent"], hover_color=C["accent_h"],
-            text_color="white",
+            fg_color=C["accent_dim"], hover_color=C["accent_h"],
+            text_color=C["accent"],
+            border_width=1, border_color=C["accent_dim"],
             font=ctk.CTkFont(family=FONT, size=14, weight="bold"),
             corner_radius=9, command=self._save,
         ).pack(side="right")
@@ -302,13 +290,6 @@ class AddCityDialog(ctk.CTkToplevel):
 #  City context menu (frameless dropdown)
 # ─────────────────────────────────────────────────────────────────────────────
 class CityContextMenu(tk.Toplevel):
-    """Frameless dropdown that appears next to the ··· button.
-
-    Closes when the user clicks anywhere outside the menu in the main window.
-    Uses a <ButtonPress> binding on the parent root (no global grab needed),
-    so item click handlers still fire normally.
-    """
-
     def __init__(self, parent, x: int, y: int, on_edit, on_delete):
         self._parent_root = parent.winfo_toplevel()
         self._bind_id     = None
@@ -319,7 +300,6 @@ class CityContextMenu(tk.Toplevel):
         self.geometry(f"160x76+{x}+{y}")
         self.resizable(False, False)
 
-        # Thin border frame
         border = tk.Frame(self, bg=C["border"], padx=1, pady=1)
         border.pack(fill="both", expand=True)
 
@@ -336,10 +316,10 @@ class CityContextMenu(tk.Toplevel):
             lbl.pack(fill="x")
             for w in (f, lbl):
                 w.bind("<Button-1>", lambda _, cmd=command: self._run(cmd))
-                w.bind("<Enter>",    lambda _, fw=f, lw=lbl: (
+                w.bind("<Enter>", lambda _, fw=f, lw=lbl: (
                     fw.configure(bg=C["card"]), lw.configure(bg=C["card"])
                 ))
-                w.bind("<Leave>",    lambda _, fw=f, lw=lbl: (
+                w.bind("<Leave>", lambda _, fw=f, lw=lbl: (
                     fw.configure(bg=C["card_hover"]), lw.configure(bg=C["card_hover"])
                 ))
 
@@ -347,15 +327,12 @@ class CityContextMenu(tk.Toplevel):
         tk.Frame(inner, bg=C["border"], height=1).pack(fill="x", padx=8)
         _item("  ✕  Remove city",  C["error"],    on_delete)
 
-        # Wait one tick so the opening click doesn't immediately close the menu
         self.after(50, self._bind_outside_click)
 
     def _bind_outside_click(self):
-        """Attach a <ButtonPress> handler to the main window to detect outside clicks."""
         self._bind_id = self._parent_root.bind("<ButtonPress>", self._on_outside_click, "+")
 
     def _on_outside_click(self, event):
-        """Close if the click landed outside this window's area."""
         try:
             wx, wy = self.winfo_rootx(), self.winfo_rooty()
             ww, wh = self.winfo_width(), self.winfo_height()
@@ -385,20 +362,17 @@ class CityContextMenu(tk.Toplevel):
 #  Edit City Dialog
 # ─────────────────────────────────────────────────────────────────────────────
 class EditCityDialog(ctk.CTkToplevel):
-    """Pre-filled dialog for updating a city's Booking.com URL."""
-
     def __init__(self, parent, city: str, current_url: str, on_save):
         super().__init__(parent)
-        self._city      = city
-        self._cur_url   = current_url
-        self._on_save   = on_save
+        self._city    = city
+        self._cur_url = current_url
+        self._on_save = on_save
 
         self.title("Edit City")
         self.geometry("540x300")
         self.configure(fg_color=C["card"])
         self.resizable(False, False)
         self.transient(parent)
-
         self.after(20, self._deferred_init)
 
     def _deferred_init(self):
@@ -416,7 +390,6 @@ class EditCityDialog(ctk.CTkToplevel):
     def _build(self):
         pad = {"padx": 32}
 
-        # City name (read-only header)
         top_row = ctk.CTkFrame(self, fg_color="transparent")
         top_row.pack(fill="x", pady=(24, 0), **pad)
 
@@ -429,7 +402,7 @@ class EditCityDialog(ctk.CTkToplevel):
         ctk.CTkLabel(
             top_row, text=self._city,
             font=ctk.CTkFont(family=FONT, size=17, weight="bold"),
-            text_color=C["accent_h"],
+            text_color=C["accent"],
         ).pack(side="left")
 
         ctk.CTkFrame(self, fg_color=C["border"], height=1).pack(
@@ -437,9 +410,9 @@ class EditCityDialog(ctk.CTkToplevel):
         )
 
         ctk.CTkLabel(
-            self, text="Booking.com search URL",
-            font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text_dim"], anchor="w",
+            self, text="BOOKING.COM SEARCH URL",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["accent"], anchor="w",
         ).pack(fill="x", **pad)
 
         self._url = ctk.CTkEntry(
@@ -464,8 +437,9 @@ class EditCityDialog(ctk.CTkToplevel):
 
         ctk.CTkButton(
             btns, text="Save", width=150, height=40,
-            fg_color=C["accent"], hover_color=C["accent_h"],
-            text_color="white",
+            fg_color=C["accent_dim"], hover_color=C["accent_h"],
+            text_color=C["accent"],
+            border_width=1, border_color=C["accent_dim"],
             font=ctk.CTkFont(family=FONT, size=14, weight="bold"),
             corner_radius=9, command=self._save,
         ).pack(side="right")
@@ -485,8 +459,6 @@ class EditCityDialog(ctk.CTkToplevel):
 #  Confirm Delete Dialog
 # ─────────────────────────────────────────────────────────────────────────────
 class ConfirmDeleteDialog(ctk.CTkToplevel):
-    """Small confirmation dialog before removing a city."""
-
     def __init__(self, parent, city: str, on_confirm):
         super().__init__(parent)
         self._city       = city
@@ -497,7 +469,6 @@ class ConfirmDeleteDialog(ctk.CTkToplevel):
         self.configure(fg_color=C["card"])
         self.resizable(False, False)
         self.transient(parent)
-
         self.after(20, self._deferred_init)
 
     def _deferred_init(self):
@@ -524,8 +495,7 @@ class ConfirmDeleteDialog(ctk.CTkToplevel):
             self,
             text=f'"{self._city}" will be removed from the list.\nThis does not delete any scraped data.',
             font=ctk.CTkFont(family=FONT, size=13),
-            text_color=C["text_dim"],
-            justify="left", anchor="w",
+            text_color=C["text_dim"], justify="left", anchor="w",
         ).pack(fill="x", **pad)
 
         ctk.CTkFrame(self, fg_color=C["border"], height=1).pack(
@@ -545,9 +515,9 @@ class ConfirmDeleteDialog(ctk.CTkToplevel):
 
         ctk.CTkButton(
             btns, text="Remove", width=110, height=38,
-            fg_color="#3a1010", hover_color="#b03040",
-            text_color="#ffb0b8",
-            border_width=1, border_color="#6a2020",
+            fg_color="#2a1010", hover_color="#8a2030",
+            text_color=C["error"],
+            border_width=1, border_color="#4a1020",
             font=ctk.CTkFont(family=FONT, size=13, weight="bold"),
             corner_radius=9, command=self._confirm,
         ).pack(side="right")
@@ -564,51 +534,60 @@ class ConfirmDeleteDialog(ctk.CTkToplevel):
 #  City card widget
 # ─────────────────────────────────────────────────────────────────────────────
 class CityCard(ctk.CTkFrame):
-    def __init__(self, parent, city: str, selected: bool, on_click, on_edit, on_delete, **kw):
-        fg = C["card_sel"] if selected else C["card"]
-        bc = C["border_sel"] if selected else C["border"]
+    def __init__(self, parent, city: str, selected: bool,
+                 on_click, on_edit, on_delete, **kw):
         super().__init__(
-            parent, fg_color=fg, corner_radius=10,
-            border_width=1, border_color=bc, cursor="hand2", **kw,
+            parent,
+            fg_color=C["card_sel"] if selected else "transparent",
+            corner_radius=8,
+            cursor="hand2",
+            **kw,
         )
-        self.city      = city
-        self._on_click = on_click
-        self._on_edit  = on_edit
+        self.city       = city
+        self._on_click  = on_click
+        self._on_edit   = on_edit
         self._on_delete = on_delete
-        self._selected = selected
+        self._selected  = selected
 
-        dot_col = C["accent_h"]  if selected else C["text_muted"]
-        txt_col = C["text"]      if selected else C["text_dim"]
-        txt_w   = "bold"         if selected else "normal"
-
-        self._dot = ctk.CTkLabel(
-            self, text="●", font=ctk.CTkFont(size=9),
-            text_color=dot_col, width=22,
+        # col 0: left accent strip (green when selected) — tk.Frame has no default min-height
+        self._left_border = tk.Frame(
+            self, width=3,
+            bg=C["accent"] if selected else C["panel"],
         )
-        self._dot.grid(row=0, column=0, padx=(12, 0), pady=13)
+        self._left_border.grid(row=0, column=0, sticky="ns", padx=(4, 0), pady=6)
 
+        # col 1: dot indicator
+        self._dot = ctk.CTkLabel(
+            self, text="●", font=ctk.CTkFont(size=8),
+            text_color=C["accent"] if selected else C["text_muted"],
+            width=18,
+        )
+        self._dot.grid(row=0, column=1, padx=(7, 3), pady=12)
+
+        # col 2: city name (fills remaining width)
         self._lbl = ctk.CTkLabel(
             self, text=city, anchor="w",
-            font=ctk.CTkFont(family=FONT, size=14, weight=txt_w),
-            text_color=txt_col,
+            font=ctk.CTkFont(
+                family=FONT, size=13,
+                weight="bold" if selected else "normal",
+            ),
+            text_color=C["accent"] if selected else C["text_dim"],
         )
-        self._lbl.grid(row=0, column=1, padx=(7, 4), pady=13, sticky="ew")
-        self.columnconfigure(1, weight=1)
+        self._lbl.grid(row=0, column=2, padx=(4, 4), pady=12, sticky="ew")
+        self.columnconfigure(2, weight=1)
 
-        # ··· menu button — hidden until hover
+        # col 3: ··· menu button — invisible until hover
         self._menu_btn = ctk.CTkButton(
             self, text="···",
-            width=28, height=26,
+            width=28, height=24,
             fg_color="transparent",
-            hover_color=C["border"],
-            text_color=C["text_muted"],   # starts invisible against card bg
-            font=ctk.CTkFont(family=FONT, size=15),
+            hover_color=C["card_hover"],
+            text_color=C["panel"],
+            font=ctk.CTkFont(family=FONT, size=14),
             corner_radius=6,
             command=self._open_menu,
         )
-        self._menu_btn.grid(row=0, column=2, padx=(0, 8), pady=8)
-        # Hide by default — reveal on hover
-        self._menu_btn.configure(text_color=C["card"])
+        self._menu_btn.grid(row=0, column=3, padx=(0, 8), pady=8)
 
         for w in (self, self._dot, self._lbl):
             w.bind("<Button-1>", self._click)
@@ -624,56 +603,64 @@ class CityCard(ctk.CTkFrame):
     def _hover_on(self, _=None):
         if not self._selected:
             self.configure(fg_color=C["card_hover"])
-        self._menu_btn.configure(text_color=C["accent_h"])
+        self._menu_btn.configure(text_color=C["text_dim"])
 
     def _hover_off(self, event=None):
-        # Don't hide if mouse moved to the menu button itself
         if event:
             widget = event.widget.winfo_containing(event.x_root, event.y_root)
             if widget and (widget == self._menu_btn._canvas
                            or str(widget).startswith(str(self._menu_btn))):
                 return
         if not self._selected:
-            self.configure(fg_color=C["card"])
-        self._menu_btn.configure(text_color=C["card"])
+            self.configure(fg_color="transparent")
+        self._menu_btn.configure(text_color=C["panel"])
 
     def _open_menu(self):
-        # Position dropdown below the ··· button
         btn = self._menu_btn
         x = btn.winfo_rootx()
         y = btn.winfo_rooty() + btn.winfo_height() + 2
         CityContextMenu(
-            self,
-            x=x, y=y,
+            self, x=x, y=y,
             on_edit=lambda: self._on_edit(self.city),
             on_delete=lambda: self._on_delete(self.city),
         )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  Log panel
+#  Log panel — terminal style with macOS dots
 # ─────────────────────────────────────────────────────────────────────────────
 class LogPanel(ctk.CTkFrame):
     def __init__(self, parent, **kw):
         super().__init__(parent, fg_color=C["log_bg"], corner_radius=12, **kw)
 
+        # Header
         hdr = ctk.CTkFrame(self, fg_color="transparent")
-        hdr.pack(fill="x", padx=16, pady=(12, 6))
+        hdr.pack(fill="x", padx=14, pady=(12, 6))
+
+        # macOS-style traffic light dots
+        dots = ctk.CTkFrame(hdr, fg_color="transparent")
+        dots.pack(side="left")
+        for color in ("#ff5f57", "#febc2e", "#28c840"):
+            ctk.CTkLabel(
+                dots, text="●", font=ctk.CTkFont(size=11),
+                text_color=color,
+            ).pack(side="left", padx=(0, 3))
 
         ctk.CTkLabel(
-            hdr, text="LOGS",
-            font=ctk.CTkFont(family=FONT, size=10, weight="bold"),
-            text_color=C["accent_h"],
+            hdr, text="  REAL-TIME TERMINAL LOGS",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["text_dim"],
         ).pack(side="left")
 
         ctk.CTkButton(
-            hdr, text="clear", width=60, height=22,
-            fg_color="transparent", hover_color=C["card"],
+            hdr, text="clear", width=52, height=20,
+            fg_color="transparent", hover_color=C["card_hover"],
             text_color=C["text_muted"],
-            font=ctk.CTkFont(family=FONT, size=11),
-            corner_radius=6, command=self.clear,
+            font=ctk.CTkFont(family=FONT, size=10),
+            corner_radius=4, command=self.clear,
         ).pack(side="right")
 
+        # Text area
         frame = ctk.CTkFrame(self, fg_color=C["log_bg"], corner_radius=0)
         frame.pack(fill="both", expand=True, padx=4, pady=(0, 8))
 
@@ -681,17 +668,16 @@ class LogPanel(ctk.CTkFrame):
             frame,
             bg=C["log_bg"], fg=C["log_info"],
             insertbackground=C["text"],
-            font=(FONT_MONO, 12),
+            font=(FONT_MONO, 11),
             wrap="word",
-            relief="flat",
-            bd=0,
+            relief="flat", bd=0,
             state="disabled",
             selectbackground=C["accent_dim"],
             selectforeground=C["text"],
         )
         scroll = tk.Scrollbar(
             frame, orient="vertical", command=self._txt.yview,
-            bg=C["panel"], troughcolor=C["log_bg"],
+            bg=C["log_bg"], troughcolor=C["log_bg"],
             activebackground=C["accent_dim"],
         )
         self._txt.configure(yscrollcommand=scroll.set)
@@ -749,7 +735,7 @@ class HotelScraperGUI(ctk.CTk):
         self._headless_var         = tk.BooleanVar(value=False)
         self._breathe_active       = False
         self._breathe_step         = 0
-        self._breathe_gen          = 0   # incremented each start; stale ticks self-cancel
+        self._breathe_gen          = 0
         self._stop_event           = threading.Event()
 
         self._setup_window()
@@ -761,8 +747,8 @@ class HotelScraperGUI(ctk.CTk):
     # ── Window setup ──────────────────────────────────────────────────────────
     def _setup_window(self):
         self.title("Hotels Scraper")
-        self.geometry("1140x780")
-        self.minsize(920, 620)
+        self.geometry("1200x820")
+        self.minsize(960, 660)
         self.configure(fg_color=C["bg"])
 
     # ── Capture loguru INFO+ → queue → UI ────────────────────────────────────
@@ -774,7 +760,6 @@ class HotelScraperGUI(ctk.CTk):
                 rec["level"].name,
                 rec["message"],
             ))
-        # INFO level — no debug output in UI
         logger.add(_sink, level="INFO", format="{message}")
 
     def _drain_log_queue(self):
@@ -795,6 +780,46 @@ class HotelScraperGUI(ctk.CTk):
         with open(self._URLS_PATH, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
+    # ── City stats from local JSON base ──────────────────────────────────────
+    def _load_city_stats(self, city: str) -> dict:
+        base_path = PROJECT_ROOT / "base" / f"{city}_hotels.json"
+        empty = {"total": 0, "avg_rating": 0.0, "last_scan": "—"}
+        if not base_path.exists():
+            return empty
+        try:
+            with open(base_path, encoding="utf-8") as f:
+                data = json.load(f)
+            if not data:
+                return empty
+            ratings = [h.get("rating", 0) for h in data if h.get("rating")]
+            avg = sum(ratings) / len(ratings) if ratings else 0.0
+            dates = []
+            for h in data:
+                if h.get("date_parsed"):
+                    try:
+                        dates.append(datetime.strptime(h["date_parsed"], "%d.%m.%Y"))
+                    except Exception:
+                        pass
+            last = max(dates).strftime("%d.%m.%Y") if dates else "—"
+            return {"total": len(data), "avg_rating": round(avg, 1), "last_scan": last}
+        except Exception:
+            return empty
+
+    def _update_metrics(self, new_count: int | None = None):
+        if not self._selected:
+            self._m_total.configure(text="—")
+            self._m_rating.configure(text="—")
+            self._m_scan.configure(text="—")
+            return
+        stats = self._load_city_stats(self._selected)
+        self._m_total.configure(text=str(stats["total"]) if stats["total"] else "0")
+        self._m_rating.configure(
+            text=f"{stats['avg_rating']:.1f}" if stats["avg_rating"] else "—"
+        )
+        self._m_scan.configure(text=stats["last_scan"])
+        if new_count is not None:
+            self._m_new.configure(text=str(new_count))
+
     # ── UI construction ───────────────────────────────────────────────────────
     def _build_ui(self):
         self._build_header()
@@ -804,66 +829,81 @@ class HotelScraperGUI(ctk.CTk):
         self._build_right(content)
 
     def _build_header(self):
-        hdr = ctk.CTkFrame(self, fg_color=C["panel"], height=66, corner_radius=0)
+        hdr = ctk.CTkFrame(self, fg_color=C["panel"], height=56, corner_radius=0)
         hdr.pack(fill="x")
         hdr.pack_propagate(False)
 
-        left = ctk.CTkFrame(hdr, fg_color="transparent")
-        left.pack(side="left", padx=22, pady=10)
+        # Logo
+        logo = ctk.CTkFrame(hdr, fg_color="transparent")
+        logo.pack(side="left", padx=22, pady=10)
 
         ctk.CTkLabel(
-            left, text="🏨",
-            font=ctk.CTkFont(size=28), text_color=C["accent_h"],
-        ).pack(side="left", padx=(0, 10))
+            logo, text="Hotel",
+            font=ctk.CTkFont(family=FONT, size=17, weight="bold"),
+            text_color=C["accent"],
+        ).pack(side="left")
 
         ctk.CTkLabel(
-            left, text="Hotels Scraper",
-            font=ctk.CTkFont(family=FONT, size=20, weight="bold"),
+            logo, text="Pulse",
+            font=ctk.CTkFont(family=FONT, size=17, weight="bold"),
             text_color=C["text"],
         ).pack(side="left")
 
         ctk.CTkLabel(
-            left, text="  ·  booking.com",
-            font=ctk.CTkFont(family=FONT, size=13),
+            logo, text="  ·  booking.com",
+            font=ctk.CTkFont(family=FONT, size=12),
             text_color=C["text_muted"],
-        ).pack(side="left", pady=(3, 0))
+        ).pack(side="left", pady=(2, 0))
 
+        # Status indicator (right)
         self._status_lbl = ctk.CTkLabel(
             hdr, text="● Idle",
-            font=ctk.CTkFont(family=FONT, size=13),
+            font=ctk.CTkFont(family=FONT_MONO, size=11, weight="bold"),
             text_color=C["text_muted"],
         )
-        self._status_lbl.pack(side="right", padx=24)
+        self._status_lbl.pack(side="right", padx=22)
 
     def _build_left(self, parent):
-        left = ctk.CTkFrame(parent, fg_color=C["panel"], corner_radius=14, width=265)
+        left = ctk.CTkFrame(parent, fg_color=C["panel"], corner_radius=14, width=256)
         left.pack(side="left", fill="y", padx=(0, 14), pady=16)
         left.pack_propagate(False)
 
-        ctk.CTkLabel(
-            left, text="CITIES",
-            font=ctk.CTkFont(family=FONT, size=10, weight="bold"),
-            text_color=C["text_muted"],
-        ).pack(anchor="w", padx=18, pady=(18, 6))
+        # Section header
+        hdr = ctk.CTkFrame(left, fg_color="transparent")
+        hdr.pack(fill="x", padx=16, pady=(18, 4))
 
+        ctk.CTkLabel(
+            hdr, text="ACTIVE CITIES",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["accent"],
+        ).pack(anchor="w")
+
+        self._city_count_lbl = ctk.CTkLabel(
+            hdr, text="",
+            font=ctk.CTkFont(family=FONT, size=11),
+            text_color=C["text_muted"],
+        )
+        self._city_count_lbl.pack(anchor="w", pady=(2, 0))
+
+        # Scrollable city list
         self._cities_scroll = ctk.CTkScrollableFrame(
             left, fg_color="transparent",
             scrollbar_button_color=C["border"],
             scrollbar_button_hover_color=C["accent_dim"],
         )
-        self._cities_scroll.pack(fill="both", expand=True, padx=10, pady=(0, 8))
+        self._cities_scroll.pack(fill="both", expand=True, padx=8, pady=(4, 8))
 
         ctk.CTkFrame(left, fg_color=C["border"], height=1).pack(
             fill="x", padx=16, pady=4
         )
 
+        # Add city button
         ctk.CTkButton(
-            left, text="＋  Add city",
+            left, text="＋  Add New City",
             height=40,
-            fg_color="transparent", hover_color=C["card"],
-            text_color=C["accent_h"],
-            border_color=C["accent_dim"], border_width=1,
-            font=ctk.CTkFont(family=FONT, size=13),
+            fg_color=C["card_sel"], hover_color=C["card_hover"],
+            text_color=C["accent"],
+            font=ctk.CTkFont(family=FONT, size=12, weight="bold"),
             corner_radius=10, command=self._open_add_dialog,
         ).pack(fill="x", padx=14, pady=(4, 14))
 
@@ -871,97 +911,179 @@ class HotelScraperGUI(ctk.CTk):
         right = ctk.CTkFrame(parent, fg_color="transparent")
         right.pack(side="left", fill="both", expand=True, pady=16)
 
-        # ── Top row: city info card + control panel ───────────────────────────
-        top = ctk.CTkFrame(right, fg_color="transparent")
-        top.pack(fill="x", pady=(0, 12))
+        # ── City header ───────────────────────────────────────────────────────
+        city_hdr = ctk.CTkFrame(right, fg_color="transparent")
+        city_hdr.pack(fill="x", pady=(0, 14))
 
-        # Selected city display
-        self._city_card = ctk.CTkFrame(top, fg_color=C["panel"], corner_radius=14)
-        self._city_card.pack(side="left", fill="both", expand=True, padx=(0, 12))
-
-        self._city_name_lbl = ctk.CTkLabel(
-            self._city_card,
-            text="Select a city from the list",
-            font=ctk.CTkFont(family=FONT, size=15),
-            text_color=C["text_muted"],
-        )
-        self._city_name_lbl.pack(expand=True, pady=22, padx=24)
-
-        # Control panel (run/stop + headless toggle)
-        ctrl = ctk.CTkFrame(top, fg_color=C["panel"], corner_radius=14, width=210)
-        ctrl.pack(side="right", fill="y")
-        ctrl.pack_propagate(False)
-
-        self._run_btn = ctk.CTkButton(
-            ctrl, text="▶   Run scraper",
-            height=52,
-            fg_color=C["btn_run"], hover_color=C["btn_run_h"],
-            text_color="white",
-            font=ctk.CTkFont(family=FONT, size=15, weight="bold"),
-            corner_radius=10, state="disabled",
-            command=self._run_scraper,
-        )
-        self._run_btn.pack(fill="x", padx=16, pady=(16, 8))
-
-        self._stop_btn = ctk.CTkButton(
-            ctrl, text="■   Stop",
-            height=36,
-            fg_color=C["card_hover"], hover_color="#7a2535",
-            text_color=C["text_dim"],
-            font=ctk.CTkFont(family=FONT, size=13),
-            corner_radius=10, state="disabled",
-            command=self._stop_scraper,
-        )
-        self._stop_btn.pack(fill="x", padx=16, pady=(0, 12))
-
-        # Divider
-        ctk.CTkFrame(ctrl, fg_color=C["border"], height=1).pack(
-            fill="x", padx=16, pady=(0, 10)
-        )
-
-        # Headless mode toggle
-        toggle_row = ctk.CTkFrame(ctrl, fg_color="transparent")
-        toggle_row.pack(fill="x", padx=16, pady=(0, 16))
+        # Left: city info text
+        info_left = ctk.CTkFrame(city_hdr, fg_color="transparent")
+        info_left.pack(side="left", fill="both", expand=True)
 
         ctk.CTkLabel(
-            toggle_row, text="Headless mode",
+            info_left, text="CONTEXT ARCHITECTURE",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["accent"], anchor="w",
+        ).pack(anchor="w")
+
+        self._city_name_lbl = ctk.CTkLabel(
+            info_left,
+            text="Select a city",
+            font=ctk.CTkFont(family=FONT, size=28, weight="bold"),
+            text_color=C["text_muted"],
+            anchor="w",
+        )
+        self._city_name_lbl.pack(anchor="w")
+
+        self._hotel_count_lbl = ctk.CTkLabel(
+            info_left, text="",
             font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text_dim"], anchor="w",
-        ).pack(side="left", expand=True, fill="x")
+            text_color=C["text_dim"],
+            anchor="w",
+        )
+        self._hotel_count_lbl.pack(anchor="w", pady=(2, 0))
+
+        # Right: controls (headless toggle + stop + run)
+        ctrl = ctk.CTkFrame(city_hdr, fg_color="transparent")
+        ctrl.pack(side="right", anchor="center")
+
+        # Headless toggle row
+        toggle_row = ctk.CTkFrame(ctrl, fg_color="transparent")
+        toggle_row.pack(anchor="e", pady=(0, 10))
+
+        # "Headless  [toggle]  Visible" — active mode is bright, inactive is dim
+        self._headless_left_lbl = ctk.CTkLabel(
+            toggle_row, text="Headless",
+            font=ctk.CTkFont(family=FONT, size=12),
+            text_color=C["text_muted"],   # dim by default (visible mode is on)
+        )
+        self._headless_left_lbl.pack(side="left", padx=(0, 8))
 
         self._headless_switch = ctk.CTkSwitch(
-            toggle_row,
-            text="",
+            toggle_row, text="",
             variable=self._headless_var,
             onvalue=True, offvalue=False,
             width=44, height=22,
             fg_color=C["toggle_off"],
             progress_color=C["toggle_on"],
             button_color=C["text"],
-            button_hover_color=C["accent_h"],
+            button_hover_color=C["accent"],
             command=self._on_headless_toggle,
         )
-        self._headless_switch.pack(side="right")
+        self._headless_switch.pack(side="left")
 
-        self._headless_lbl = ctk.CTkLabel(
-            ctrl, text="Browser: visible",
-            font=ctk.CTkFont(family=FONT, size=11),
-            text_color=C["text_muted"],
+        self._headless_right_lbl = ctk.CTkLabel(
+            toggle_row, text="Visible",
+            font=ctk.CTkFont(family=FONT, size=12),
+            text_color=C["text"],         # bright by default
         )
-        self._headless_lbl.pack(pady=(0, 14))
+        self._headless_right_lbl.pack(side="left", padx=(8, 0))
+
+        # Buttons row
+        btns_row = ctk.CTkFrame(ctrl, fg_color="transparent")
+        btns_row.pack(anchor="e")
+
+        self._stop_btn = ctk.CTkButton(
+            btns_row, text="◼  Stop",
+            width=95, height=42,
+            fg_color=C["card_hover"],
+            hover_color="#4a1a2a",
+            text_color=C["text_dim"],
+            border_width=1, border_color=C["border"],
+            font=ctk.CTkFont(family=FONT, size=13),
+            corner_radius=10, state="disabled",
+            command=self._stop_scraper,
+        )
+        self._stop_btn.pack(side="left", padx=(0, 10))
+
+        self._run_btn = ctk.CTkButton(
+            btns_row, text="▶  Start Scraper",
+            width=148, height=42,
+            fg_color=C["btn_run"],
+            hover_color=C["btn_run_h"],
+            text_color="#dfe2eb",
+            font=ctk.CTkFont(family=FONT, size=13, weight="bold"),
+            corner_radius=10, state="disabled",
+            command=self._run_scraper,
+        )
+        self._run_btn.pack(side="left")
+
+        # ── Metric cards ──────────────────────────────────────────────────────
+        metrics_row = ctk.CTkFrame(right, fg_color="transparent")
+        metrics_row.pack(fill="x", pady=(0, 14))
+        metrics_row.columnconfigure((0, 1, 2, 3), weight=1, uniform="metric")
+
+        cards_cfg = [
+            ("HOTELS IN DB",  "—", "· local database"),
+            ("NEW FOUND",      "—", "· last scrape"),
+            ("AVG RATING",     "—", "· booking.com"),
+            ("LAST SCAN",      "—", "· date parsed"),
+        ]
+        val_labels = []
+        for col, (title, val, sub) in enumerate(cards_cfg):
+            padx = (0, 12) if col < 3 else (0, 0)
+            lbl = self._make_metric_card(metrics_row, col, title, val, sub, padx)
+            val_labels.append(lbl)
+
+        self._m_total, self._m_new, self._m_rating, self._m_scan = val_labels
 
         # ── Progress bar ──────────────────────────────────────────────────────
+        prog_hdr = ctk.CTkFrame(right, fg_color="transparent")
+        prog_hdr.pack(fill="x")
+
+        ctk.CTkLabel(
+            prog_hdr, text="OPERATIONAL PROGRESS",
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["text_muted"],
+        ).pack(side="left")
+
+        self._scan_domain_lbl = ctk.CTkLabel(
+            prog_hdr, text="",
+            font=ctk.CTkFont(family=FONT_MONO, size=9),
+            text_color=C["accent"],
+        )
+        self._scan_domain_lbl.pack(side="right")
+
         self._progress = ctk.CTkProgressBar(
             right, mode="indeterminate",
-            fg_color=C["card"], progress_color=C["accent"],
-            height=3, corner_radius=2,
+            fg_color=C["card_sel"],
+            progress_color=C["accent"],
+            height=4, corner_radius=2,
         )
-        self._progress.pack(fill="x", pady=(0, 12))
+        self._progress.pack(fill="x", pady=(4, 12))
         self._progress.set(0)
 
         # ── Log panel ─────────────────────────────────────────────────────────
         self._log = LogPanel(right)
         self._log.pack(fill="both", expand=True)
+
+    def _make_metric_card(self, parent, col: int, title: str,
+                          value: str, subtitle: str, padx) -> ctk.CTkLabel:
+        card = ctk.CTkFrame(parent, fg_color=C["panel"], corner_radius=12)
+        card.grid(row=0, column=col, sticky="ew", padx=padx, ipady=4)
+
+        ctk.CTkLabel(
+            card, text=title,
+            font=ctk.CTkFont(family=FONT, size=9, weight="bold"),
+            text_color=C["text_muted"],
+            anchor="w",
+        ).pack(anchor="w", padx=16, pady=(14, 2))
+
+        val_lbl = ctk.CTkLabel(
+            card, text=value,
+            font=ctk.CTkFont(family=FONT, size=24, weight="bold"),
+            text_color=C["text"],
+            anchor="w",
+        )
+        val_lbl.pack(anchor="w", padx=16)
+
+        ctk.CTkLabel(
+            card, text=subtitle,
+            font=ctk.CTkFont(family=FONT, size=10),
+            text_color=C["text_dim"],
+            anchor="w",
+        ).pack(anchor="w", padx=16, pady=(2, 14))
+
+        return val_lbl
 
     # ── City list ─────────────────────────────────────────────────────────────
     def _refresh_cities(self):
@@ -970,6 +1092,13 @@ class HotelScraperGUI(ctk.CTk):
         self._cards.clear()
 
         urls = self._load_urls()
+
+        # Update city count subtitle
+        n = len(urls)
+        self._city_count_lbl.configure(
+            text=f"Monitoring {n} region{'s' if n != 1 else ''}" if n else ""
+        )
+
         if not urls:
             ctk.CTkLabel(
                 self._cities_scroll,
@@ -988,7 +1117,7 @@ class HotelScraperGUI(ctk.CTk):
                 on_edit=self._edit_city,
                 on_delete=self._delete_city,
             )
-            card.pack(fill="x", pady=(0, 6))
+            card.pack(fill="x", pady=(0, 2))
             self._cards[city] = card
 
     def _select_city(self, city: str):
@@ -999,24 +1128,33 @@ class HotelScraperGUI(ctk.CTk):
         for name, card in self._cards.items():
             sel = (name == city)
             card._selected = sel
-            card.configure(
-                fg_color=C["card_sel"] if sel else C["card"],
-                border_color=C["border_sel"] if sel else C["border"],
-            )
-            card._dot.configure(text_color=C["accent_h"] if sel else C["text_muted"])
+            card.configure(fg_color=C["card_sel"] if sel else "transparent")
+            card._left_border.configure(bg=C["accent"] if sel else C["panel"])
+            card._dot.configure(text_color=C["accent"] if sel else C["text_muted"])
             card._lbl.configure(
-                text_color=C["text"] if sel else C["text_dim"],
+                text_color=C["accent"] if sel else C["text_dim"],
                 font=ctk.CTkFont(
-                    family=FONT, size=14,
+                    family=FONT, size=13,
                     weight="bold" if sel else "normal",
                 ),
             )
 
         self._city_name_lbl.configure(
-            text=f"🌍  {city}",
-            font=ctk.CTkFont(family=FONT, size=19, weight="bold"),
+            text=city,
+            font=ctk.CTkFont(family=FONT, size=28, weight="bold"),
             text_color=C["text"],
         )
+        self._update_metrics()
+
+        # Update hotel count label
+        stats = self._load_city_stats(city)
+        if stats["total"]:
+            self._hotel_count_lbl.configure(
+                text=f"{stats['total']:,} hotels indexed in this region"
+            )
+        else:
+            self._hotel_count_lbl.configure(text="No data yet — run the scraper")
+
         self._run_btn.configure(state="normal")
         self._start_breathe()
 
@@ -1068,25 +1206,31 @@ class HotelScraperGUI(ctk.CTk):
         if self._selected == city:
             self._selected = None
             self._city_name_lbl.configure(
-                text="Select a city from the list",
-                font=ctk.CTkFont(family=FONT, size=15),
+                text="Select a city",
+                font=ctk.CTkFont(family=FONT, size=28, weight="bold"),
                 text_color=C["text_muted"],
             )
+            self._hotel_count_lbl.configure(text="")
             self._run_btn.configure(state="disabled")
+            self._m_total.configure(text="—")
+            self._m_new.configure(text="—")
+            self._m_rating.configure(text="—")
+            self._m_scan.configure(text="—")
         self._refresh_cities()
 
     # ── Headless toggle ───────────────────────────────────────────────────────
     def _on_headless_toggle(self):
         if self._headless_var.get():
-            self._headless_lbl.configure(text="Browser: headless", text_color=C["accent_h"])
+            # Headless ON — left label bright, right label dim
+            self._headless_left_lbl.configure(text_color=C["accent"])
+            self._headless_right_lbl.configure(text_color=C["text_muted"])
         else:
-            self._headless_lbl.configure(text="Browser: visible",  text_color=C["text_muted"])
+            # Visible ON — right label bright, left label dim
+            self._headless_left_lbl.configure(text_color=C["text_muted"])
+            self._headless_right_lbl.configure(text_color=C["text"])
 
     # ── Run button breathing animation ────────────────────────────────────────
     def _start_breathe(self):
-        """Pulse the Run button with a warm amber glow while idle.
-        Uses a generation counter so switching cities never spawns duplicate loops.
-        """
         self._breathe_active = True
         self._breathe_step   = 0
         self._breathe_gen   += 1
@@ -1094,17 +1238,15 @@ class HotelScraperGUI(ctk.CTk):
 
     def _stop_breathe(self):
         self._breathe_active = False
-        self._breathe_gen   += 1   # invalidates any in-flight tick
+        self._breathe_gen   += 1
         try:
             self._run_btn.configure(fg_color=C["btn_run"])
         except Exception:
             pass
 
     def _breathe_tick(self, gen: int):
-        # Bail if this tick belongs to a superseded animation or scraper is running
         if gen != self._breathe_gen or not self._breathe_active or self._running:
             return
-        # Smooth sine: full cycle = 120 ticks × 20 ms = 2.4 s
         t     = (math.sin(self._breathe_step * math.pi / 60) + 1) / 2
         color = _lerp_color(C["breathe_lo"], C["breathe_hi"], t)
         try:
@@ -1123,7 +1265,6 @@ class HotelScraperGUI(ctk.CTk):
 
     @staticmethod
     def _now() -> str:
-        from datetime import datetime
         return datetime.now().strftime("%H:%M:%S")
 
     # ── Run scraper ───────────────────────────────────────────────────────────
@@ -1137,7 +1278,8 @@ class HotelScraperGUI(ctk.CTk):
         self._run_btn.configure(state="disabled")
         self._stop_btn.configure(state="normal")
         self._progress.start()
-        self._set_status("Running...", C["success"])
+        self._set_status("RUNNING...", C["success"])
+        self._scan_domain_lbl.configure(text="SCANNING DOMAIN: BOOKING.COM")
         self._log.separator(self._selected)
 
         headless = self._headless_var.get()
@@ -1149,22 +1291,12 @@ class HotelScraperGUI(ctk.CTk):
         self._thread.start()
 
     def _make_filter_fail_callback(self) -> callable:
-        """Return a thread-safe callback for BookingScraper.
-        Called from the scraper thread when filter cannot be applied.
-        Blocks the thread, shows a warning dialog on the main thread,
-        and returns True (continue) or False (abort) once the user decides.
-        """
         def callback() -> bool:
             event  = threading.Event()
-            result = [False]  # mutable container for dialog's choice
-
-            # Schedule dialog creation on the main (GUI) thread
+            result = [False]
             self.after(0, lambda: FilterWarningDialog(self, event, result))
-
-            # Block the scraper thread until the user clicks a button
             event.wait()
             return result[0]
-
         return callback
 
     def _worker(self, city: str, headless: bool):
@@ -1197,10 +1329,10 @@ class HotelScraperGUI(ctk.CTk):
                 if not cards:
                     if self._stop_event.is_set():
                         logger.info("Scraping stopped by user")
-                        self.after(0, self._done, True, "Stopped by user")
+                        self.after(0, self._done, True, "Stopped by user", None)
                     else:
                         logger.info(f"No cards found for {city}")
-                        self.after(0, self._done, False, "No cards found")
+                        self.after(0, self._done, False, "No cards found", None)
                     return
                 updated_data, new_data = CardParser().parse(cards, old_data)
 
@@ -1209,22 +1341,32 @@ class HotelScraperGUI(ctk.CTk):
             if new_data:
                 logger.info(f"PROCESSED {len(new_data)} NEW properties")
                 GoogleSheetsManager().update(new_data, city)
-                self.after(0, self._done, True, f"New properties: {len(new_data)}")
+                self.after(0, self._done, True, f"New properties: {len(new_data)}", len(new_data))
             else:
                 logger.info(f"No new properties found for {city}")
-                self.after(0, self._done, True, "No new properties found")
+                self.after(0, self._done, True, "No new properties found", 0)
 
         except Exception as exc:
             logger.error(f"Scraper error: {exc}")
-            self.after(0, self._done, False, str(exc))
+            self.after(0, self._done, False, str(exc), None)
 
-    def _done(self, success: bool, message: str):
+    def _done(self, success: bool, message: str, new_count: int | None):
         self._running = False
         self._run_btn.configure(state="normal")
         self._stop_btn.configure(state="disabled")
         self._progress.stop()
         self._progress.set(0)
+        self._scan_domain_lbl.configure(text="")
         self._start_breathe()
+        self._update_metrics(new_count=new_count)
+
+        # Refresh hotel count label
+        if self._selected:
+            stats = self._load_city_stats(self._selected)
+            if stats["total"]:
+                self._hotel_count_lbl.configure(
+                    text=f"{stats['total']:,} hotels indexed in this region"
+                )
 
         if success:
             self._set_status(f"Done — {message}", C["success"])

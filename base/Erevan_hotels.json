@@ -4236,5 +4236,31 @@
         "date_parsed": "28.03.2026",
         "link": "https://www.booking.com/hotel/am/gratsia-am.en-gb.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/292346219.jpg?k=f8ac48bb3ec7412ea78524b962f3e447117a55b3b8b90b75445f0bb1a0638cfc&o="
+    },
+    {
+        "id": "adams-yerevan.en-gb",
+        "name": "Wave Inn Yerevan",
+        "stars": 0,
+        "rating": 10.0,
+        "number_of_reviews": 5,
+        "district": null,
+        "city": null,
+        "new_mark": false,
+        "date_parsed": "01.04.2026",
+        "link": "https://www.booking.com/hotel/am/adams-yerevan.en-gb.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/682522040.jpg?k=d6225a62a8964e7c13c9c847e32c91e75e9e0cfd47d37a3080866a6a6bab0a49&o="
+    },
+    {
+        "id": "budget-pushkin.en-gb",
+        "name": "budget hotel Pushkin",
+        "stars": 0,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "01.04.2026",
+        "link": "https://www.booking.com/hotel/am/budget-pushkin.en-gb.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/844397183.jpg?k=da0a360bcb3fad8e95d30cae2bc297760f36a5d1c5886918a0f11178ee583e29&o="
     }
 ]
