@@ -4262,5 +4262,31 @@
         "date_parsed": "01.04.2026",
         "link": "https://www.booking.com/hotel/am/budget-pushkin.en-gb.html",
         "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/844397183.jpg?k=da0a360bcb3fad8e95d30cae2bc297760f36a5d1c5886918a0f11178ee583e29&o="
+    },
+    {
+        "id": "kokik.en-gb",
+        "name": "Kokik Hotel",
+        "stars": 0,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "07.04.2026",
+        "link": "https://www.booking.com/hotel/am/kokik.en-gb.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/846414871.jpg?k=5cebf00136a4be15c563c6cebe9d77f36d330d78924ce0c7161acb5b51e91729&o="
+    },
+    {
+        "id": "time-boutique.en-gb",
+        "name": "Time Boutique Hotel",
+        "stars": 3,
+        "rating": 0.0,
+        "number_of_reviews": 0,
+        "district": null,
+        "city": null,
+        "new_mark": true,
+        "date_parsed": "07.04.2026",
+        "link": "https://www.booking.com/hotel/am/time-boutique.en-gb.html",
+        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/846271635.jpg?k=5736d7ebb6d570d730cfbc0c1d8c277f214bb75b59e7bc3dc5e5cbff87cbe682&o="
     }
 ]

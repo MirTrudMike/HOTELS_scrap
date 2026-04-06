@@ -727,6 +727,8 @@ class HotelScraperGUI(ctk.CTk):
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("dark-blue")
         super().__init__()
+        self.withdraw()
+        self.attributes('-alpha', 0.0)
 
         self._selected: str | None = None
         self._running              = False
@@ -743,6 +745,29 @@ class HotelScraperGUI(ctk.CTk):
         self._build_ui()
         self._refresh_cities()
         self.after(80, self._drain_log_queue)
+
+        self.protocol("WM_DELETE_WINDOW", self._on_close)
+        self.update_idletasks()
+        self.deiconify()
+        self.after(10, self._fade_in)
+
+    # ── Window fade-in / fade-out animations ─────────────────────────────────
+    def _fade_in(self, alpha: float = 0.0):
+        alpha = min(alpha + 0.08, 1.0)
+        self.attributes('-alpha', alpha)
+        if alpha < 1.0:
+            self.after(16, self._fade_in, alpha)
+
+    def _fade_out(self, alpha: float = 1.0):
+        alpha = max(alpha - 0.1, 0.0)
+        self.attributes('-alpha', alpha)
+        if alpha > 0.0:
+            self.after(16, self._fade_out, alpha)
+        else:
+            self.destroy()
+
+    def _on_close(self):
+        self._fade_out()
 
     # ── Window setup ──────────────────────────────────────────────────────────
     def _setup_window(self):
