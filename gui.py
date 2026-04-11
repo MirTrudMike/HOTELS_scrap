@@ -758,6 +758,7 @@ class HotelScraperGUI(ctk.CTk):
         self._log_q: queue.Queue  = queue.Queue()
         self._cards: dict[str, CityCard] = {}
         self._headless_var         = tk.BooleanVar(value=False)
+        self._update_mode_var      = tk.BooleanVar(value=False)
         self._breathe_active       = False
         self._breathe_step         = 0
         self._breathe_gen          = 0
@@ -833,6 +834,14 @@ class HotelScraperGUI(ctk.CTk):
             json.dump(data, f, ensure_ascii=False, indent=2)
 
     # ── City stats from local JSON base ──────────────────────────────────────
+    @staticmethod
+    def _latest_from_history(history: dict) -> any:
+        """Return the value with the most recent date key from a history dict."""
+        if not history:
+            return None
+        latest_key = max(history, key=lambda d: datetime.strptime(d, "%d.%m.%Y"))
+        return history[latest_key]
+
     def _load_city_stats(self, city: str) -> dict:
         base_path = PROJECT_ROOT / "base" / f"{city}_hotels.json"
         empty = {"total": 0, "avg_rating": 0.0, "last_scan": "—"}
@@ -843,16 +852,41 @@ class HotelScraperGUI(ctk.CTk):
                 data = json.load(f)
             if not data:
                 return empty
-            ratings = [h.get("rating", 0) for h in data if h.get("rating")]
-            avg = sum(ratings) / len(ratings) if ratings else 0.0
-            dates = []
+
+            # New format: rating is a dict {"date": value}
+            # Old format: rating is a plain float (pre-migration files)
+            is_new_format = isinstance(data[0].get("rating"), dict)
+
+            ratings = []
+            scan_dates = []
+
             for h in data:
-                if h.get("date_parsed"):
-                    try:
-                        dates.append(datetime.strptime(h["date_parsed"], "%d.%m.%Y"))
-                    except Exception:
-                        pass
-            last = max(dates).strftime("%d.%m.%Y") if dates else "—"
+                if is_new_format:
+                    # Latest rating per hotel
+                    rating_hist = h.get("rating") or {}
+                    val = self._latest_from_history(rating_hist)
+                    if val:
+                        ratings.append(float(val))
+                    # Collect all history date keys to find the most recent scan
+                    for field in ("rating", "number_of_reviews", "name"):
+                        for date_str in (h.get(field) or {}).keys():
+                            try:
+                                scan_dates.append(datetime.strptime(date_str, "%d.%m.%Y"))
+                            except Exception:
+                                pass
+                else:
+                    # Old flat format — still works until migration is run
+                    val = h.get("rating", 0)
+                    if val:
+                        ratings.append(float(val))
+                    if h.get("date_parsed"):
+                        try:
+                            scan_dates.append(datetime.strptime(h["date_parsed"], "%d.%m.%Y"))
+                        except Exception:
+                            pass
+
+            avg = sum(ratings) / len(ratings) if ratings else 0.0
+            last = max(scan_dates).strftime("%d.%m.%Y") if scan_dates else "—"
             return {"total": len(data), "avg_rating": round(avg, 1), "last_scan": last}
         except Exception:
             return empty
@@ -998,20 +1032,56 @@ class HotelScraperGUI(ctk.CTk):
         ctrl = ctk.CTkFrame(city_hdr, fg_color="transparent")
         ctrl.pack(side="right", anchor="center")
 
-        # Headless toggle row
-        toggle_row = ctk.CTkFrame(ctrl, fg_color="transparent")
-        toggle_row.pack(anchor="e", pady=(0, 10))
+        # Both toggles in a shared grid so the switches align vertically
+        toggles = ctk.CTkFrame(ctrl, fg_color="transparent")
+        toggles.pack(anchor="e", pady=(0, 10))
+        toggles.columnconfigure(0, minsize=90)   # left labels
+        toggles.columnconfigure(1, minsize=52)   # switches
+        toggles.columnconfigure(2, minsize=100)  # right labels
 
-        # "Headless  [toggle]  Visible" — active mode is bright, inactive is dim
-        self._headless_left_lbl = ctk.CTkLabel(
-            toggle_row, text="Headless",
+        # Row 0 — scrape mode: New Hotels ←→ Update Mode
+        self._update_left_lbl = ctk.CTkLabel(
+            toggles, text="New Hotels",
             font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text_muted"],   # dim by default (visible mode is on)
+            text_color=C["text"],       # active by default
+            anchor="e",
         )
-        self._headless_left_lbl.pack(side="left", padx=(0, 8))
+        self._update_left_lbl.grid(row=0, column=0, sticky="e", padx=(0, 8), pady=(0, 6))
+
+        self._update_switch = ctk.CTkSwitch(
+            toggles, text="",
+            variable=self._update_mode_var,
+            onvalue=True, offvalue=False,
+            width=44, height=22,
+            fg_color=C["toggle_off"],
+            progress_color=C["toggle_on"],
+            button_color=C["text"],
+            button_hover_color=C["accent"],
+            command=self._on_update_mode_toggle,
+        )
+        self._update_switch.grid(row=0, column=1, pady=(0, 6))
+
+        self._update_right_lbl = ctk.CTkLabel(
+            toggles, text="Update Mode",
+            font=ctk.CTkFont(family=FONT, size=12),
+            text_color=C["text_muted"],
+            anchor="w",
+        )
+        self._update_right_lbl.grid(row=0, column=2, sticky="w", padx=(8, 0), pady=(0, 6))
+
+        # Row 1 — browser mode: Headless ←→ Visible
+        # _headless_var=False → knob left → Headless active (default)
+        # _headless_var=True  → knob right → Visible active
+        self._headless_left_lbl = ctk.CTkLabel(
+            toggles, text="Headless",
+            font=ctk.CTkFont(family=FONT, size=12),
+            text_color=C["text"],       # active by default
+            anchor="e",
+        )
+        self._headless_left_lbl.grid(row=1, column=0, sticky="e", padx=(0, 8))
 
         self._headless_switch = ctk.CTkSwitch(
-            toggle_row, text="",
+            toggles, text="",
             variable=self._headless_var,
             onvalue=True, offvalue=False,
             width=44, height=22,
@@ -1021,14 +1091,15 @@ class HotelScraperGUI(ctk.CTk):
             button_hover_color=C["accent"],
             command=self._on_headless_toggle,
         )
-        self._headless_switch.pack(side="left")
+        self._headless_switch.grid(row=1, column=1)
 
         self._headless_right_lbl = ctk.CTkLabel(
-            toggle_row, text="Visible",
+            toggles, text="Visible",
             font=ctk.CTkFont(family=FONT, size=12),
-            text_color=C["text"],         # bright by default
+            text_color=C["text_muted"],
+            anchor="w",
         )
-        self._headless_right_lbl.pack(side="left", padx=(8, 0))
+        self._headless_right_lbl.grid(row=1, column=2, sticky="w", padx=(8, 0))
 
         # Buttons row
         btns_row = ctk.CTkFrame(ctrl, fg_color="transparent")
@@ -1270,16 +1341,25 @@ class HotelScraperGUI(ctk.CTk):
             self._m_scan.configure(text="—")
         self._refresh_cities()
 
+    # ── Update Mode toggle ────────────────────────────────────────────────────
+    def _on_update_mode_toggle(self):
+        if self._update_mode_var.get():
+            self._update_left_lbl.configure(text_color=C["text_muted"])
+            self._update_right_lbl.configure(text_color=C["accent"])
+        else:
+            self._update_left_lbl.configure(text_color=C["text"])
+            self._update_right_lbl.configure(text_color=C["text_muted"])
+
     # ── Headless toggle ───────────────────────────────────────────────────────
     def _on_headless_toggle(self):
         if self._headless_var.get():
-            # Headless ON — left label bright, right label dim
-            self._headless_left_lbl.configure(text_color=C["accent"])
-            self._headless_right_lbl.configure(text_color=C["text_muted"])
-        else:
-            # Visible ON — right label bright, left label dim
+            # Visible mode — knob right → right label bright
             self._headless_left_lbl.configure(text_color=C["text_muted"])
             self._headless_right_lbl.configure(text_color=C["text"])
+        else:
+            # Headless mode — knob left → left label bright
+            self._headless_left_lbl.configure(text_color=C["text"])
+            self._headless_right_lbl.configure(text_color=C["text_muted"])
 
     # ── Run button breathing animation ────────────────────────────────────────
     def _start_breathe(self):
@@ -1334,10 +1414,12 @@ class HotelScraperGUI(ctk.CTk):
         self._scan_domain_lbl.configure(text="SCANNING DOMAIN: BOOKING.COM")
         self._log.separator(self._selected)
 
-        headless = self._headless_var.get()
+        # _headless_var=False means headless is active (knob left = Headless label lit)
+        headless     = not self._headless_var.get()
+        update_mode  = self._update_mode_var.get()
         self._thread = threading.Thread(
             target=self._worker,
-            args=(self._selected, headless),
+            args=(self._selected, headless, update_mode),
             daemon=True,
         )
         self._thread.start()
@@ -1351,25 +1433,27 @@ class HotelScraperGUI(ctk.CTk):
             return result[0]
         return callback
 
-    def _worker(self, city: str, headless: bool):
+    def _worker(self, city: str, headless: bool, update_mode: bool):
         try:
             from scraper.storage import DataStorage
             from scraper.scraper import BookingScraper, ScraperConfig
             from scraper.parser import CardParser
+            from scraper.updater import RecordUpdater
             from scraper.sheets import GoogleSheetsManager
 
-            storage  = DataStorage()
-            url      = storage.get_booking_url(city)
-            config   = ScraperConfig(
+            storage = DataStorage()
+            url     = storage.get_booking_url(city)
+            config  = ScraperConfig(
                 page_load_timeout=40,
                 element_timeout=15,
                 retry_attempts=5,
                 retry_delay=3.0,
             )
-            old_data = storage.read_base(city, "hotels")
+            records = storage.read_base(city, "hotels")
 
-            mode_label = "headless" if headless else "visible"
-            logger.info(f"Starting scraper for {city} ({mode_label} browser)")
+            browser_label = "headless" if headless else "visible"
+            mode_label    = "UPDATE MODE" if update_mode else "NEW HOTELS MODE"
+            logger.info(f"Starting scraper for {city} ({browser_label} browser, {mode_label})")
 
             with BookingScraper(
                 config,
@@ -1381,28 +1465,46 @@ class HotelScraperGUI(ctk.CTk):
                 if not cards:
                     if self._stop_event.is_set():
                         logger.info("Scraping stopped by user")
-                        self.after(0, self._done, True, "Stopped by user", None)
+                        self.after(0, self._done, True, "Stopped by user", None, None)
                     else:
                         logger.info(f"No cards found for {city}")
-                        self.after(0, self._done, False, "No cards found", None)
+                        self.after(0, self._done, False, "No cards found", None, None)
                     return
-                updated_data, new_data = CardParser().parse(cards, old_data)
+                fresh = CardParser().extract(cards)
 
-            storage.save_base(city, "hotels", updated_data)
+            all_records, new_records, changed_records = RecordUpdater().process(
+                fresh, records, update_mode
+            )
+            storage.save_base(city, "hotels", all_records)
 
-            if new_data:
-                logger.info(f"PROCESSED {len(new_data)} NEW properties")
-                GoogleSheetsManager().update(new_data, city)
-                self.after(0, self._done, True, f"New properties: {len(new_data)}", len(new_data))
-            else:
-                logger.info(f"No new properties found for {city}")
-                self.after(0, self._done, True, "No new properties found", 0)
+            if new_records:
+                logger.info(f"PROCESSED {len(new_records)} NEW properties")
+                GoogleSheetsManager().update(new_records, city)
+
+            if update_mode and changed_records:
+                logger.success(f"UPDATED {len(changed_records)} existing properties")
+
+            self.after(
+                0, self._done, True,
+                self._build_done_message(new_records, changed_records, update_mode),
+                len(new_records),
+                len(changed_records) if update_mode else None,
+            )
 
         except Exception as exc:
             logger.error(f"Scraper error: {exc}")
-            self.after(0, self._done, False, str(exc), None)
+            self.after(0, self._done, False, str(exc), None, None)
 
-    def _done(self, success: bool, message: str, new_count: int | None):
+    @staticmethod
+    def _build_done_message(new_records, changed_records, update_mode: bool) -> str:
+        parts = []
+        if new_records:
+            parts.append(f"New: {len(new_records)}")
+        if update_mode and changed_records:
+            parts.append(f"Updated: {len(changed_records)}")
+        return ", ".join(parts) if parts else ("No changes found" if update_mode else "No new properties found")
+
+    def _done(self, success: bool, message: str, new_count: int | None, changed_count: int | None):
         self._running = False
         self._run_btn.configure(state="normal")
         self._stop_btn.configure(state="disabled")

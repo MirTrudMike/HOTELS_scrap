@@ -2,30 +2,27 @@ from datetime import datetime
 from loguru import logger
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from scraper.models import HotelData
+from scraper.models import HotelDataParsed
 
 
 class CardParser:
-    def parse(
-        self, cards: list[WebElement], old_data: list[HotelData]
-    ) -> tuple[list[HotelData], list[HotelData]]:
-        """Extracts hotel data from card elements. Returns (all_data, new_data)."""
+    def extract(self, cards: list[WebElement]) -> list[HotelDataParsed]:
+        """Extract flat hotel snapshots from card elements. Returns all parseable hotels."""
         logger.info("STARTED collecting DATA from cards")
-        old_ids = {h.id for h in old_data}
-        new_data: list[HotelData] = []
+        result: list[HotelDataParsed] = []
 
         for card in cards:
             link = self._get_link(card)
             if not link:
                 continue
             hotel_id = self._get_id(link)
-            if not hotel_id or hotel_id in old_ids:
+            if not hotel_id:
                 continue
 
             rating, number_of_reviews = self._get_rating(card, hotel_id)
             district, city = self._get_location(card)
 
-            hotel = HotelData(
+            hotel = HotelDataParsed(
                 id=hotel_id,
                 name=self._get_name(card),
                 stars=self._get_stars(card),
@@ -38,10 +35,10 @@ class CardParser:
                 link=link,
                 foto=self._get_image_link(card),
             )
-            old_data.append(hotel)
-            new_data.append(hotel)
+            result.append(hotel)
 
-        return old_data, new_data
+        logger.info(f"Extracted {len(result)} hotel snapshots from {len(cards)} cards")
+        return result
 
     def _get_link(self, card: WebElement) -> str | None:
         try:

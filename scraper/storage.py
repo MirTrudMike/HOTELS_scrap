@@ -1,7 +1,7 @@
 import os
 import json
 from loguru import logger
-from scraper.models import HotelData
+from scraper.models import HotelRecord
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,12 +26,12 @@ class DataStorage:
             logger.error(f"❌ No URL found for city: {city}")
             return ""
 
-    def read_base(self, city: str, property_type: str) -> list[HotelData]:
+    def read_base(self, city: str, property_type: str) -> list[HotelRecord]:
         path = os.path.join(self._base_dir, f'{city}_{property_type}.json')
         try:
             with open(path, mode='r') as f:
                 raw = json.load(f)
-            return [HotelData.from_dict(h) for h in raw] if raw else []
+            return [HotelRecord.from_dict(h) for h in raw] if raw else []
         except FileNotFoundError:
             logger.info(f"Base file for {city} {property_type} not found — creating empty base file")
             with open(path, mode='w') as f:
@@ -41,7 +41,7 @@ class DataStorage:
             logger.error(f"❌ ERROR READING base file for {city} {property_type}: {e}")
             raise
 
-    def save_base(self, city: str, property_type: str, data: list[HotelData]) -> bool:
+    def save_base(self, city: str, property_type: str, data: list[HotelRecord]) -> bool:
         path = os.path.join(self._base_dir, f'{city}_{property_type}.json')
         try:
             with open(path, mode='w') as f:

@@ -1,1835 +1,4373 @@
 [
     {
         "id": "gudauri-inn",
-        "name": "Gudauri Inn",
-        "stars": 5,
-        "rating": 8.0,
-        "number_of_reviews": 822,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-inn.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/637428760.jpg?k=ae00c05732f02b80c691c47025b76c5f4b1c5b79169d449dc2f762f43fa898f6&o="
+        "name": {
+            "19.09.2025": "Gudauri Inn"
+        },
+        "stars": {
+            "19.09.2025": 5
+        },
+        "rating": {
+            "19.09.2025": 8.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 822
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-inn.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/637428760.jpg?k=ae00c05732f02b80c691c47025b76c5f4b1c5b79169d449dc2f762f43fa898f6&o="
+        }
     },
     {
         "id": "sunny-hills",
-        "name": "Chalet Papa Basili",
-        "stars": 3,
-        "rating": 8.9,
-        "number_of_reviews": 236,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/sunny-hills.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/497319348.jpg?k=9384be1d6721e4404aadb24faa79124afc37ec69d03035ea84dc6f30d005d053&o="
+        "name": {
+            "19.09.2025": "Chalet Papa Basili"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 236
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/sunny-hills.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/497319348.jpg?k=9384be1d6721e4404aadb24faa79124afc37ec69d03035ea84dc6f30d005d053&o="
+        }
     },
     {
         "id": "hotel-gudauri",
-        "name": "Marco Polo Hotel Gudauri",
-        "stars": 5,
-        "rating": 8.2,
-        "number_of_reviews": 853,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/hotel-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/486505277.jpg?k=314c2f96cb7d36b9ae4347030ecc1425c69db2563428ee54cfb24801d730d271&o="
+        "name": {
+            "19.09.2025": "Marco Polo Hotel Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 5
+        },
+        "rating": {
+            "19.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 853
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/hotel-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/486505277.jpg?k=314c2f96cb7d36b9ae4347030ecc1425c69db2563428ee54cfb24801d730d271&o="
+        }
     },
     {
         "id": "z-appartments-gudauri",
-        "name": "Zen Apartments Gudauri",
-        "stars": 3,
-        "rating": 9.4,
-        "number_of_reviews": 136,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/z-appartments-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/164672981.jpg?k=6e949adbd6ce224eb3153b5618a18efbf6ab78545e00da0774d166c4c35f0248&o="
+        "name": {
+            "19.09.2025": "Zen Apartments Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 136
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/z-appartments-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/164672981.jpg?k=6e949adbd6ce224eb3153b5618a18efbf6ab78545e00da0774d166c4c35f0248&o="
+        }
     },
     {
         "id": "mgzavrebi-gudauri-rooms",
-        "name": "Gudauri Loft Hotel",
-        "stars": 5,
-        "rating": 8.4,
-        "number_of_reviews": 975,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/mgzavrebi-gudauri-rooms.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/628984040.jpg?k=085a6983f0c6fef4da814f102c086211bf9e3089df7c41e323e17a6482a3ee61&o="
+        "name": {
+            "19.09.2025": "Gudauri Loft Hotel"
+        },
+        "stars": {
+            "19.09.2025": 5
+        },
+        "rating": {
+            "19.09.2025": 8.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 975
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/mgzavrebi-gudauri-rooms.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/628984040.jpg?k=085a6983f0c6fef4da814f102c086211bf9e3089df7c41e323e17a6482a3ee61&o="
+        }
     },
     {
         "id": "monte",
-        "name": "Monte Hotel",
-        "stars": 4,
-        "rating": 8.8,
-        "number_of_reviews": 1359,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/monte.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/340398608.jpg?k=99c0223ca7eadcdb4df08c34d0e1cc5a3f58dbc7dd7963afcfe52f81bf0d40e6&o="
+        "name": {
+            "19.09.2025": "Monte Hotel"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 1359
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/monte.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/340398608.jpg?k=99c0223ca7eadcdb4df08c34d0e1cc5a3f58dbc7dd7963afcfe52f81bf0d40e6&o="
+        }
     },
     {
         "id": "aurora-peak-luxury-suites-gudauri",
-        "name": "Aurora Peak Luxury Suites",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 28,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/aurora-peak-luxury-suites-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/664790018.jpg?k=d5c95d9bd2322d7087716777e2167b63602447da1da870b95a1bc378a2afce1b&o="
+        "name": {
+            "19.09.2025": "Aurora Peak Luxury Suites"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 28
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/aurora-peak-luxury-suites-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/664790018.jpg?k=d5c95d9bd2322d7087716777e2167b63602447da1da870b95a1bc378a2afce1b&o="
+        }
     },
     {
         "id": "gudauri-palace-apartments",
-        "name": "Gudauri Palace Apartments",
-        "stars": 3,
-        "rating": 8.7,
-        "number_of_reviews": 18,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-palace-apartments.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/28168108.jpg?k=078b1380daa316b8d6c3b9d1f94ad637e8a4bd4a0f848a458283bf15dcbca5f0&o="
+        "name": {
+            "19.09.2025": "Gudauri Palace Apartments"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 18
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-palace-apartments.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/28168108.jpg?k=078b1380daa316b8d6c3b9d1f94ad637e8a4bd4a0f848a458283bf15dcbca5f0&o="
+        }
     },
     {
         "id": "gudauri-palace-apartments-in-new-gudauri",
-        "name": "Gudauri Palace apartments in New Gudauri",
-        "stars": 4,
-        "rating": 8.8,
-        "number_of_reviews": 43,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-palace-apartments-in-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/411987033.jpg?k=b2c1fb80f3a6e7be8623b2f476bf28fe81a9df60e40b48564ce94a0f01a47b36&o="
+        "name": {
+            "19.09.2025": "Gudauri Palace apartments in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 43
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-palace-apartments-in-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/411987033.jpg?k=b2c1fb80f3a6e7be8623b2f476bf28fe81a9df60e40b48564ce94a0f01a47b36&o="
+        }
     },
     {
         "id": "gudauri-apartment",
-        "name": "Mountain Cricket Chalets and Apartments Gudauri",
-        "stars": 4,
-        "rating": 9.4,
-        "number_of_reviews": 51,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-apartment.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/176747582.jpg?k=04c32adbea761fb20f4af409e37fb1b50c3bb5fe529954665101a181a9e0e059&o="
+        "name": {
+            "19.09.2025": "Mountain Cricket Chalets and Apartments Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 51
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-apartment.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/176747582.jpg?k=04c32adbea761fb20f4af409e37fb1b50c3bb5fe529954665101a181a9e0e059&o="
+        }
     },
     {
         "id": "alpina",
-        "name": "Alpina Hotel",
-        "stars": 0,
-        "rating": 8.8,
-        "number_of_reviews": 190,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/alpina.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/514998585.jpg?k=73311d8078ce82820fcee1ade06db7c548ca42adaeebe696cd1e7dd46a9601be&o="
+        "name": {
+            "19.09.2025": "Alpina Hotel"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 190
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/alpina.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/514998585.jpg?k=73311d8078ce82820fcee1ade06db7c548ca42adaeebe696cd1e7dd46a9601be&o="
+        }
     },
     {
         "id": "gudauri-travel-chalet-in-block-ii-new-gudauri",
-        "name": "Gudauri Travel Chalets in New Gudauri",
-        "stars": 0,
-        "rating": 8.6,
-        "number_of_reviews": 20,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-travel-chalet-in-block-ii-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/599085099.jpg?k=46d00724064b9c85f8ee3a9f5e851f6b813e705f4e01acd9ed4d369beee5e92e&o="
+        "name": {
+            "19.09.2025": "Gudauri Travel Chalets in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 8.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 20
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-travel-chalet-in-block-ii-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/599085099.jpg?k=46d00724064b9c85f8ee3a9f5e851f6b813e705f4e01acd9ed4d369beee5e92e&o="
+        }
     },
     {
         "id": "best-western-gudauri",
-        "name": "Best Western Gudauri",
-        "stars": 4,
-        "rating": 8.2,
-        "number_of_reviews": 376,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/best-western-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/327116385.jpg?k=79ca3d04b645e102bf06aec6f50928c6d8f3accb7a85a09e9008d1e1dd4f8261&o="
+        "name": {
+            "19.09.2025": "Best Western Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 376
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/best-western-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/327116385.jpg?k=79ca3d04b645e102bf06aec6f50928c6d8f3accb7a85a09e9008d1e1dd4f8261&o="
+        }
     },
     {
         "id": "segreto-apartments-ski-resort",
-        "name": "VistaRest Gudauri Ski Resort - by VistaRest Escapes & Stays",
-        "stars": 3,
-        "rating": 9.9,
-        "number_of_reviews": 25,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/segreto-apartments-ski-resort.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/711219745.jpg?k=4dc3c82855e1f1a4d65bc7160601608932b0fdbb6e1c3dc54ce0a8797832b0ab&o="
+        "name": {
+            "19.09.2025": "VistaRest Gudauri Ski Resort - by VistaRest Escapes & Stays"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 25
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/segreto-apartments-ski-resort.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/711219745.jpg?k=4dc3c82855e1f1a4d65bc7160601608932b0fdbb6e1c3dc54ce0a8797832b0ab&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-407",
-        "name": "New Gudauri Apartment #407",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 9,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-407.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/289124480.jpg?k=3ce4ef8a42476a6e087eefce670c94f3604625d0bf0040d9ad85900257458ead&o="
+        "name": {
+            "19.09.2025": "New Gudauri Apartment #407"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 9
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-407.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/289124480.jpg?k=3ce4ef8a42476a6e087eefce670c94f3604625d0bf0040d9ad85900257458ead&o="
+        }
     },
     {
         "id": "roshe-gudauri",
-        "name": "Hotel Roshe Gudauri",
-        "stars": 4,
-        "rating": 8.8,
-        "number_of_reviews": 514,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/roshe-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/674133969.jpg?k=2416579d472b2fb89777bbfc607839908566ba53dd7715cee044e61a7af45db1&o="
+        "name": {
+            "19.09.2025": "Hotel Roshe Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 514
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/roshe-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/674133969.jpg?k=2416579d472b2fb89777bbfc607839908566ba53dd7715cee044e61a7af45db1&o="
+        }
     },
     {
         "id": "gudlofts",
-        "name": "Winterfell in New Gudauri",
-        "stars": 3,
-        "rating": 8.8,
-        "number_of_reviews": 114,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudlofts.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/612211781.jpg?k=9a4dfda6862e07b42ef75049691430dd42aea2bf123068f86a38b27401475c7d&o="
+        "name": {
+            "19.09.2025": "Winterfell in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 114
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudlofts.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/612211781.jpg?k=9a4dfda6862e07b42ef75049691430dd42aea2bf123068f86a38b27401475c7d&o="
+        }
     },
     {
         "id": "new-gudauri-atrium-ski-and-dream-apartment",
-        "name": "New Gudauri Atrium Ski and Dream Apartments",
-        "stars": 3,
-        "rating": 9.8,
-        "number_of_reviews": 19,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-atrium-ski-and-dream-apartment.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/337857719.jpg?k=9ac30d23b50d9bb041fd6c241c170f222d3d391a6906bcc3fa142573bc64110f&o="
+        "name": {
+            "19.09.2025": "New Gudauri Atrium Ski and Dream Apartments"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 19
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-atrium-ski-and-dream-apartment.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/337857719.jpg?k=9ac30d23b50d9bb041fd6c241c170f222d3d391a6906bcc3fa142573bc64110f&o="
+        }
     },
     {
         "id": "gudauri-travel-apartments-in-atrium-new-gudauri",
-        "name": "Atrium New Gudauri by Gudauri Travel",
-        "stars": 3,
-        "rating": 8.3,
-        "number_of_reviews": 37,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-atrium-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/605789093.jpg?k=4c0b727282b9869f4652d1d41f9423c2bc96d57a8e57a1d4aefeb3aff314460c&o="
+        "name": {
+            "19.09.2025": "Atrium New Gudauri by Gudauri Travel"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 37
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-atrium-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/605789093.jpg?k=4c0b727282b9869f4652d1d41f9423c2bc96d57a8e57a1d4aefeb3aff314460c&o="
+        }
     },
     {
         "id": "gudauri-prestige",
-        "name": "Edelweiss Hotel",
-        "stars": 4,
-        "rating": 7.9,
-        "number_of_reviews": 121,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-prestige.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/69809821.jpg?k=2250681dcb7247ff86c0332093e1ab8781dd73e9c779fd97f78b2b1fc793eb85&o="
+        "name": {
+            "19.09.2025": "Edelweiss Hotel"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 121
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-prestige.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/69809821.jpg?k=2250681dcb7247ff86c0332093e1ab8781dd73e9c779fd97f78b2b1fc793eb85&o="
+        }
     },
     {
         "id": "gudauri-travel-apartments-in-suites-new-gudauri",
-        "name": "New Gudauri Suites by Gudauri Travel",
-        "stars": 3,
-        "rating": 7.9,
-        "number_of_reviews": 70,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-suites-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/599061189.jpg?k=a8ae9a512bb3967798a623dae5e2b343fc1b34c5dca4f5626338f23a9664d3b9&o="
+        "name": {
+            "19.09.2025": "New Gudauri Suites by Gudauri Travel"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 7.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 70
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-suites-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/599061189.jpg?k=a8ae9a512bb3967798a623dae5e2b343fc1b34c5dca4f5626338f23a9664d3b9&o="
+        }
     },
     {
         "id": "ski-amp-relax",
-        "name": "ATRIUM \"Ski & Relax\"",
-        "stars": 4,
-        "rating": 7.7,
-        "number_of_reviews": 14,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/ski-amp-relax.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/239408790.jpg?k=8d6c07d620199505f73f539c9591a60e53a10a98f004c892dc216eb9b2415e8d&o="
+        "name": {
+            "19.09.2025": "ATRIUM \"Ski & Relax\""
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 14
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/ski-amp-relax.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/239408790.jpg?k=8d6c07d620199505f73f539c9591a60e53a10a98f004c892dc216eb9b2415e8d&o="
+        }
     },
     {
         "id": "new-gudauri-red-co-loft-2",
-        "name": "New Gudauri, Red Co. Loft 2.",
-        "stars": 3,
-        "rating": 8.8,
-        "number_of_reviews": 21,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-red-co-loft-2.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/209392959.jpg?k=ae436ecc08d85f964b4cfcc5703855d7bd336b1ec604f8fd8e3a0a5c0f0748e8&o="
+        "name": {
+            "19.09.2025": "New Gudauri, Red Co. Loft 2."
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 21
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-red-co-loft-2.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/209392959.jpg?k=ae436ecc08d85f964b4cfcc5703855d7bd336b1ec604f8fd8e3a0a5c0f0748e8&o="
+        }
     },
     {
         "id": "gvc-175-new-gudauri",
-        "name": "GVC New Gudauri Apartments",
-        "stars": 4,
-        "rating": 8.4,
-        "number_of_reviews": 99,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-175-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/515845690.jpg?k=6d96f64bd925bd4b7e8be1e3c496fac6bcbd84e3e1e32fee96746c896f26ecc8&o="
+        "name": {
+            "19.09.2025": "GVC New Gudauri Apartments"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 99
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-175-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/515845690.jpg?k=6d96f64bd925bd4b7e8be1e3c496fac6bcbd84e3e1e32fee96746c896f26ecc8&o="
+        }
     },
     {
         "id": "apartment-411-in-block-3-new-gudauri",
-        "name": "Apartment #411 in Block 3 New Gudauri",
-        "stars": 3,
-        "rating": 8.9,
-        "number_of_reviews": 7,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/apartment-411-in-block-3-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/289018600.jpg?k=558c945a962ea662a19ba69475fffb2f6528b9ef4a73301852330ee7f8cd8cab&o="
+        "name": {
+            "19.09.2025": "Apartment #411 in Block 3 New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 7
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/apartment-411-in-block-3-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/289018600.jpg?k=558c945a962ea662a19ba69475fffb2f6528b9ef4a73301852330ee7f8cd8cab&o="
+        }
     },
     {
         "id": "gudauri-lodge",
-        "name": "Gudauri Lodge",
-        "stars": 5,
-        "rating": 9.1,
-        "number_of_reviews": 1918,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-lodge.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/237955454.jpg?k=22ae2a82bc68fbe5c998f83fd2ac96733a653ba8d179eaa00e1b4e284525fcbf&o="
+        "name": {
+            "19.09.2025": "Gudauri Lodge"
+        },
+        "stars": {
+            "19.09.2025": 5
+        },
+        "rating": {
+            "19.09.2025": 9.1
+        },
+        "number_of_reviews": {
+            "19.09.2025": 1918
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-lodge.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/237955454.jpg?k=22ae2a82bc68fbe5c998f83fd2ac96733a653ba8d179eaa00e1b4e284525fcbf&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-loft1",
-        "name": "Koka's Apartment in New Gudauri Loft1 #340",
-        "stars": 3,
-        "rating": 8.3,
-        "number_of_reviews": 14,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-loft1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/224852435.jpg?k=d21550fb187e173cace9836855bcd047aeb716adcf493482fca2820b42361a84&o="
+        "name": {
+            "19.09.2025": "Koka's Apartment in New Gudauri Loft1 #340"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 14
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-loft1.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/224852435.jpg?k=d21550fb187e173cace9836855bcd047aeb716adcf493482fca2820b42361a84&o="
+        }
     },
     {
         "id": "atrium-new-gudauri-terrace-with-gondola-view",
-        "name": "Atrium New Gudauri",
-        "stars": 4,
-        "rating": 9.2,
-        "number_of_reviews": 103,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/atrium-new-gudauri-terrace-with-gondola-view.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/626100309.jpg?k=7f560bd89e6b9ab749d5aa7e2f1748798aaac676d30c273671b34d5626a67252&o="
+        "name": {
+            "19.09.2025": "Atrium New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 103
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/atrium-new-gudauri-terrace-with-gondola-view.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/626100309.jpg?k=7f560bd89e6b9ab749d5aa7e2f1748798aaac676d30c273671b34d5626a67252&o="
+        }
     },
     {
         "id": "hillsite-gudauri",
-        "name": "Gudauri Hillsite",
-        "stars": 3,
-        "rating": 9.0,
-        "number_of_reviews": 666,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/hillsite-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/237650347.jpg?k=b0626d4af58b99f4dcab9eaffd3697e8b9bd321772b708dac5efe81e27b7f4f5&o="
+        "name": {
+            "19.09.2025": "Gudauri Hillsite"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 666
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/hillsite-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/237650347.jpg?k=b0626d4af58b99f4dcab9eaffd3697e8b9bd321772b708dac5efe81e27b7f4f5&o="
+        }
     },
     {
         "id": "new-gudauri-appartments-with-4k-tv-and-comfortable-kitchen",
-        "name": "Light and stylish 2 bedroom apartment near the Gondola lift in New Gudauri",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 15,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-appartments-with-4k-tv-and-comfortable-kitchen.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/417274245.jpg?k=fe16401562043ee5d08f5e657338c864a9b93114fc9d5b94bdc60c1e2ba207ca&o="
+        "name": {
+            "19.09.2025": "Light and stylish 2 bedroom apartment near the Gondola lift in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 15
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-appartments-with-4k-tv-and-comfortable-kitchen.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/417274245.jpg?k=fe16401562043ee5d08f5e657338c864a9b93114fc9d5b94bdc60c1e2ba207ca&o="
+        }
     },
     {
         "id": "gudauri-hills-apart",
-        "name": "Gudauri Hills Apart Hotel",
-        "stars": 4,
-        "rating": 8.3,
-        "number_of_reviews": 318,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-hills-apart.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/286897857.jpg?k=2912d3411bfc28dc0a571d708b3be1f3fd6bf23bae059475f13584ca618a0866&o="
+        "name": {
+            "19.09.2025": "Gudauri Hills Apart Hotel"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 318
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-hills-apart.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/286897857.jpg?k=2912d3411bfc28dc0a571d708b3be1f3fd6bf23bae059475f13584ca618a0866&o="
+        }
     },
     {
         "id": "ozon-gudauri-gudauri",
-        "name": "Ozon Gudauri",
-        "stars": 0,
-        "rating": 9.3,
-        "number_of_reviews": 42,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/ozon-gudauri-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/386332678.jpg?k=51ba44888eeaee3f87b967e7195984a981936ba62d696075e14a23a008b83619&o="
+        "name": {
+            "19.09.2025": "Ozon Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 42
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/ozon-gudauri-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/386332678.jpg?k=51ba44888eeaee3f87b967e7195984a981936ba62d696075e14a23a008b83619&o="
+        }
     },
     {
         "id": "four-seasons-new-gudauri",
-        "name": "Four Seasons - New Gudauri",
-        "stars": 3,
-        "rating": 9.0,
-        "number_of_reviews": 78,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/four-seasons-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/501911316.jpg?k=c237e8d0b3aba2c8a830ef88962a1ad3dcefa0c4dcf2ecefba28e233202c2d7e&o="
+        "name": {
+            "19.09.2025": "Four Seasons - New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 78
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/four-seasons-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/501911316.jpg?k=c237e8d0b3aba2c8a830ef88962a1ad3dcefa0c4dcf2ecefba28e233202c2d7e&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-403-gudauri",
-        "name": "New Gudauri Apartment #403",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 6,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-403-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/494365077.jpg?k=8b86d632b47832b1dbf6b775134679bd4a14ca840b531d5310e6a1bbaefb85bb&o="
+        "name": {
+            "19.09.2025": "New Gudauri Apartment #403"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 6
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-403-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/494365077.jpg?k=8b86d632b47832b1dbf6b775134679bd4a14ca840b531d5310e6a1bbaefb85bb&o="
+        }
     },
     {
         "id": "residence-gudauri-hills",
-        "name": "Residence Gudauri Hills",
-        "stars": 4,
-        "rating": 8.0,
-        "number_of_reviews": 523,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/residence-gudauri-hills.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/319848340.jpg?k=9570758a82ed7c36af8c00804a2bc7d5341c69671a29bbf4cf8d35ad3ee552b7&o="
+        "name": {
+            "19.09.2025": "Residence Gudauri Hills"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 523
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/residence-gudauri-hills.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/319848340.jpg?k=9570758a82ed7c36af8c00804a2bc7d5341c69671a29bbf4cf8d35ad3ee552b7&o="
+        }
     },
     {
         "id": "panorama-vista-gudauri-studio-43",
-        "name": "Panorama Vista Gudauri Apartments",
-        "stars": 3,
-        "rating": 9.2,
-        "number_of_reviews": 67,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/panorama-vista-gudauri-studio-43.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/222277855.jpg?k=35ae15126f18dcff1239b8b139242f82c73b9bbcc3ae5953ebbe918fdbe4795f&o="
+        "name": {
+            "19.09.2025": "Panorama Vista Gudauri Apartments"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 67
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/panorama-vista-gudauri-studio-43.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/222277855.jpg?k=35ae15126f18dcff1239b8b139242f82c73b9bbcc3ae5953ebbe918fdbe4795f&o="
+        }
     },
     {
         "id": "ski-house-bluebird",
-        "name": "Ski House Bluebird",
-        "stars": 3,
-        "rating": 9.8,
-        "number_of_reviews": 5,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/ski-house-bluebird.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/300929939.jpg?k=5d2d864e4ffe94aa1a30deb6a982759772bd49646a7eac8f806c1301bdd3d853&o="
+        "name": {
+            "19.09.2025": "Ski House Bluebird"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 5
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/ski-house-bluebird.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/300929939.jpg?k=5d2d864e4ffe94aa1a30deb6a982759772bd49646a7eac8f806c1301bdd3d853&o="
+        }
     },
     {
         "id": "wooden-house-in-gudauri-gudauri2",
-        "name": "Cozy Wooden House near Gudauri",
-        "stars": 3,
-        "rating": 9.4,
-        "number_of_reviews": 26,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/wooden-house-in-gudauri-gudauri2.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/590314009.jpg?k=3cd08a399c19c32b0f56c01b0122805c97bb58638d33c90fe29c99f3f14929b1&o="
+        "name": {
+            "19.09.2025": "Cozy Wooden House near Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 26
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/wooden-house-in-gudauri-gudauri2.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/590314009.jpg?k=3cd08a399c19c32b0f56c01b0122805c97bb58638d33c90fe29c99f3f14929b1&o="
+        }
     },
     {
         "id": "superb-studio-in-new-gudauri-atrium-333",
-        "name": "New Gudauri Atrium",
-        "stars": 4,
-        "rating": 8.4,
-        "number_of_reviews": 108,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/superb-studio-in-new-gudauri-atrium-333.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/448245655.jpg?k=a5a591dd5f8ee13cd9d48d3d706cbbd02a8c0e85475645c466d808e7204baf86&o="
+        "name": {
+            "19.09.2025": "New Gudauri Atrium"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 108
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/superb-studio-in-new-gudauri-atrium-333.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/448245655.jpg?k=a5a591dd5f8ee13cd9d48d3d706cbbd02a8c0e85475645c466d808e7204baf86&o="
+        }
     },
     {
         "id": "gvc-luxe-new-gudauri-215",
-        "name": "GVC New Gudauri Block-4",
-        "stars": 4,
-        "rating": 8.7,
-        "number_of_reviews": 45,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-luxe-new-gudauri-215.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/736497702.jpg?k=de3ab26bcf07a771a17edd94b94b273a2b6c2a8ff79c9da5d10374015c6fb10a&o="
+        "name": {
+            "19.09.2025": "GVC New Gudauri Block-4"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 45
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-luxe-new-gudauri-215.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/736497702.jpg?k=de3ab26bcf07a771a17edd94b94b273a2b6c2a8ff79c9da5d10374015c6fb10a&o="
+        }
     },
     {
         "id": "new-gudauri-apartments-gudauri2",
-        "name": "New Gudauri Rooms",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 178,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartments-gudauri2.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/696786811.jpg?k=f463a25a189a6bfdc8d61ae86d3d9a4067cabfa1ca830ab26276d8de202658d1&o="
+        "name": {
+            "19.09.2025": "New Gudauri Rooms"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 178
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartments-gudauri2.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/696786811.jpg?k=f463a25a189a6bfdc8d61ae86d3d9a4067cabfa1ca830ab26276d8de202658d1&o="
+        }
     },
     {
         "id": "evdo-apartments-f4-flat-studio",
-        "name": "Evdo Apartments F4 Flat Studio",
-        "stars": 3,
-        "rating": 9.7,
-        "number_of_reviews": 3,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/evdo-apartments-f4-flat-studio.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/527280194.jpg?k=73ba80466b8dc00ee562ed1943cecc48684e08770c2d375a2d5c6532bba4e776&o="
+        "name": {
+            "19.09.2025": "Evdo Apartments F4 Flat Studio"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 3
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/evdo-apartments-f4-flat-studio.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/527280194.jpg?k=73ba80466b8dc00ee562ed1943cecc48684e08770c2d375a2d5c6532bba4e776&o="
+        }
     },
     {
         "id": "gudauri-mountain-views",
-        "name": "Gudauri Mountain Views",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 86,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-mountain-views.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/511994414.jpg?k=dcd75cd613f2c94fb5efe17a5c99cdc99543b99e830fb50349927c7d8d8f6ce2&o="
+        "name": {
+            "19.09.2025": "Gudauri Mountain Views"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 86
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-mountain-views.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/511994414.jpg?k=dcd75cd613f2c94fb5efe17a5c99cdc99543b99e830fb50349927c7d8d8f6ce2&o="
+        }
     },
     {
         "id": "quadrum",
-        "name": "Quadrum Hotel",
-        "stars": 4,
-        "rating": 7.7,
-        "number_of_reviews": 297,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/quadrum.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/634675411.jpg?k=7214eaa5a381100bdb5cc1ceb6a8bbea4f934c63bc2a5c17f0fc176a4abb0a53&o="
+        "name": {
+            "19.09.2025": "Quadrum Hotel"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 297
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/quadrum.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/634675411.jpg?k=7214eaa5a381100bdb5cc1ceb6a8bbea4f934c63bc2a5c17f0fc176a4abb0a53&o="
+        }
     },
     {
         "id": "new-gudauri-studio-gudauri",
-        "name": "New Gudauri Studio",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 14,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-studio-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/328808066.jpg?k=cdacec8cf717411bd2f4be935e3bc5a78a0e60f888079f8d386af31daca7e65f&o="
+        "name": {
+            "19.09.2025": "New Gudauri Studio"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 14
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-studio-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/328808066.jpg?k=cdacec8cf717411bd2f4be935e3bc5a78a0e60f888079f8d386af31daca7e65f&o="
+        }
     },
     {
         "id": "mountain-dream-house",
-        "name": "Mountain Dream House",
-        "stars": 3,
-        "rating": 9.5,
-        "number_of_reviews": 112,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/mountain-dream-house.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/623771595.jpg?k=c5df930c3eb0091dbb806c2474dee1576b6bf4ab77f28608899cc010fd59d889&o="
+        "name": {
+            "19.09.2025": "Mountain Dream House"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.5
+        },
+        "number_of_reviews": {
+            "19.09.2025": 112
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/mountain-dream-house.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/623771595.jpg?k=c5df930c3eb0091dbb806c2474dee1576b6bf4ab77f28608899cc010fd59d889&o="
+        }
     },
     {
         "id": "new-2-room-apartment-in-alpic-gudauri",
-        "name": "2-room apartment, Redco, Alpic 405",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 6,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-2-room-apartment-in-alpic-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/321727760.jpg?k=84ab827ec47ed141c81e6e697923f5bd41b8d454d0ac97df2eb6f0e85ed387bd&o="
+        "name": {
+            "19.09.2025": "2-room apartment, Redco, Alpic 405"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 6
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-2-room-apartment-in-alpic-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/321727760.jpg?k=84ab827ec47ed141c81e6e697923f5bd41b8d454d0ac97df2eb6f0e85ed387bd&o="
+        }
     },
     {
         "id": "good-aura",
-        "name": "Hotel GoodAura",
-        "stars": 4,
-        "rating": 8.2,
-        "number_of_reviews": 147,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/good-aura.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/678554422.jpg?k=2c0c7da123306e11ab2bce428e7ccc74885aa9d07a32671a2fd872b43bd1ea82&o="
+        "name": {
+            "19.09.2025": "Hotel GoodAura"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 147
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/good-aura.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/678554422.jpg?k=2c0c7da123306e11ab2bce428e7ccc74885aa9d07a32671a2fd872b43bd1ea82&o="
+        }
     },
     {
         "id": "gudauri-summer-apt-112m2-fireplace-heating-works",
-        "name": "Gudauri Summer Apartment - Fireplace, Netflix on 100\" Projector Screen, Full kitchen",
-        "stars": 0,
-        "rating": 9.8,
-        "number_of_reviews": 15,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-summer-apt-112m2-fireplace-heating-works.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/572215362.jpg?k=e87c1d3b3c771298b799f51e3a0455d78497924637bbec89e005ffe7d2256113&o="
+        "name": {
+            "19.09.2025": "Gudauri Summer Apartment - Fireplace, Netflix on 100\" Projector Screen, Full kitchen"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 15
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-summer-apt-112m2-fireplace-heating-works.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/572215362.jpg?k=e87c1d3b3c771298b799f51e3a0455d78497924637bbec89e005ffe7d2256113&o="
+        }
     },
     {
         "id": "cozy-2-bedroom-apartment-in-the-gudauri-centre-ski-in-ski-out",
-        "name": "Cozy 2 bedroom apartment in the Gudauri centre - ski in/ ski out",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 20,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/cozy-2-bedroom-apartment-in-the-gudauri-centre-ski-in-ski-out.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/340418439.jpg?k=6c1e2d1a1901a0af278ea30b6860bb8e4eb75f4b2e71662c74d39b9ecf706d37&o="
+        "name": {
+            "19.09.2025": "Cozy 2 bedroom apartment in the Gudauri centre - ski in/ ski out"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 20
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/cozy-2-bedroom-apartment-in-the-gudauri-centre-ski-in-ski-out.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/340418439.jpg?k=6c1e2d1a1901a0af278ea30b6860bb8e4eb75f4b2e71662c74d39b9ecf706d37&o="
+        }
     },
     {
         "id": "luxurious-2br-apartment-with-mountain-piste-view-close-to-main-gondola",
-        "name": "Luxurious 2BR apartment with mountain/piste view, close to main Gondola",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 7,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/luxurious-2br-apartment-with-mountain-piste-view-close-to-main-gondola.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/334060441.jpg?k=77cf71ce1e4da9a2921677f9c4972dc6f3e4fd18b3591d2d9c63b0f8ced37e5f&o="
+        "name": {
+            "19.09.2025": "Luxurious 2BR apartment with mountain/piste view, close to main Gondola"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 7
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/luxurious-2br-apartment-with-mountain-piste-view-close-to-main-gondola.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/334060441.jpg?k=77cf71ce1e4da9a2921677f9c4972dc6f3e4fd18b3591d2d9c63b0f8ced37e5f&o="
+        }
     },
     {
         "id": "gvc-225-new-gudauri",
-        "name": "GVC New Gudauri Apartments Loft",
-        "stars": 3,
-        "rating": 8.0,
-        "number_of_reviews": 53,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-225-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/513922715.jpg?k=290d751cd4f456fa8dddefdf6480db39f16637badf9a61899eea3f8f0a75ede2&o="
+        "name": {
+            "19.09.2025": "GVC New Gudauri Apartments Loft"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 53
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-225-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/513922715.jpg?k=290d751cd4f456fa8dddefdf6480db39f16637badf9a61899eea3f8f0a75ede2&o="
+        }
     },
     {
         "id": "evdo-apartments-f1-luxury-house-gudauri",
-        "name": "Evdo Apartments F1 Luxury House",
-        "stars": 3,
-        "rating": 9.7,
-        "number_of_reviews": 3,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/evdo-apartments-f1-luxury-house-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/427481243.jpg?k=6111fb6b3cce701195c152e9ccbf251e5dd5ab7eaee94849ed839f286fc7a00d&o="
+        "name": {
+            "19.09.2025": "Evdo Apartments F1 Luxury House"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 3
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/evdo-apartments-f1-luxury-house-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/427481243.jpg?k=6111fb6b3cce701195c152e9ccbf251e5dd5ab7eaee94849ed839f286fc7a00d&o="
+        }
     },
     {
         "id": "new-gudauri-atrium-445",
-        "name": "New Gudauri Atrium 445",
-        "stars": 3,
-        "rating": 9.2,
-        "number_of_reviews": 16,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-atrium-445.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/328511930.jpg?k=4da74d4d29da54e5634e3cc878543ccea7ad0b9d9b42a4ce27b1f8f025054ba3&o="
+        "name": {
+            "19.09.2025": "New Gudauri Atrium 445"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 16
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-atrium-445.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/328511930.jpg?k=4da74d4d29da54e5634e3cc878543ccea7ad0b9d9b42a4ce27b1f8f025054ba3&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-loft-2-n332",
-        "name": "New Gudauri Apartment Loft 2 N332",
-        "stars": 3,
-        "rating": 8.2,
-        "number_of_reviews": 31,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-loft-2-n332.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/339995817.jpg?k=09a4d952f8527597d63924c453390233fc878eae2796dab7fea7f9a1d47acd28&o="
+        "name": {
+            "19.09.2025": "New Gudauri Apartment Loft 2 N332"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 31
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-loft-2-n332.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/339995817.jpg?k=09a4d952f8527597d63924c453390233fc878eae2796dab7fea7f9a1d47acd28&o="
+        }
     },
     {
         "id": "gvc-315-new-gudauri",
-        "name": "GVC New Gudauri Atrium",
-        "stars": 4,
-        "rating": 8.7,
-        "number_of_reviews": 18,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-315-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/294000509.jpg?k=186bf171866aa6fbf8101320ecfa38b9a55a0b0707e928d21f7dd064a04a78e1&o="
+        "name": {
+            "19.09.2025": "GVC New Gudauri Atrium"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 18
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-315-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/294000509.jpg?k=186bf171866aa6fbf8101320ecfa38b9a55a0b0707e928d21f7dd064a04a78e1&o="
+        }
     },
     {
         "id": "maxloft-442",
-        "name": "New Gudauri MaxLoft #442",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 24,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/maxloft-442.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/328893586.jpg?k=d85a7a4d2a4d998001433288ff93ab653979c38966a94df5299a0ee765f747f6&o="
+        "name": {
+            "19.09.2025": "New Gudauri MaxLoft #442"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 24
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/maxloft-442.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/328893586.jpg?k=d85a7a4d2a4d998001433288ff93ab653979c38966a94df5299a0ee765f747f6&o="
+        }
     },
     {
         "id": "love-journey-gudauri",
-        "name": "Love Journey Gudauri",
-        "stars": 3,
-        "rating": 9.5,
-        "number_of_reviews": 16,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/love-journey-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/270910762.jpg?k=00b18862824e2a3c3e8805fc23b63be9e076710f9affa2f3642bea010982e449&o="
+        "name": {
+            "19.09.2025": "Love Journey Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.5
+        },
+        "number_of_reviews": {
+            "19.09.2025": 16
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/love-journey-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/270910762.jpg?k=00b18862824e2a3c3e8805fc23b63be9e076710f9affa2f3642bea010982e449&o="
+        }
     },
     {
         "id": "new-gudauri-ski-heaven-gudauri",
-        "name": "New Gudauri Ski Heaven",
-        "stars": 0,
-        "rating": 9.8,
-        "number_of_reviews": 6,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-ski-heaven-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/640685356.jpg?k=07bafcc02ae84dbb774ab16ade18d3cdc330e5cb57549f608ff0daf84e6d2695&o="
+        "name": {
+            "19.09.2025": "New Gudauri Ski Heaven"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 6
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-ski-heaven-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/640685356.jpg?k=07bafcc02ae84dbb774ab16ade18d3cdc330e5cb57549f608ff0daf84e6d2695&o="
+        }
     },
     {
         "id": "3-room-apartment-gvc-gudauri-103",
-        "name": "3-room Apartment NFT Gudauri Penta 103",
-        "stars": 3,
-        "rating": 8.2,
-        "number_of_reviews": 11,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/3-room-apartment-gvc-gudauri-103.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/241203976.jpg?k=2c87217cb98bb2fb9f7b3c6e630e9fa57fbb909b082407169590375f079d60b1&o="
+        "name": {
+            "19.09.2025": "3-room Apartment NFT Gudauri Penta 103"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 11
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/3-room-apartment-gvc-gudauri-103.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/241203976.jpg?k=2c87217cb98bb2fb9f7b3c6e630e9fa57fbb909b082407169590375f079d60b1&o="
+        }
     },
     {
         "id": "new-gudauri-red-co-loft-2-gudauri1",
-        "name": "New Gudauri Loft2 #433",
-        "stars": 3,
-        "rating": 8.7,
-        "number_of_reviews": 37,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-red-co-loft-2-gudauri1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/331525901.jpg?k=69328f345668eb7248cfdbc51b10bcb67a4a42166c51e3a5de299d3c401969b1&o="
+        "name": {
+            "19.09.2025": "New Gudauri Loft2 #433"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 37
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-red-co-loft-2-gudauri1.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/331525901.jpg?k=69328f345668eb7248cfdbc51b10bcb67a4a42166c51e3a5de299d3c401969b1&o="
+        }
     },
     {
         "id": "ski-in-47-out-apartment-in-new-gudauri-loft-2",
-        "name": "Ski In/Out Apartment in New Gudauri, Loft 2",
-        "stars": 3,
-        "rating": 9.1,
-        "number_of_reviews": 15,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/ski-in-47-out-apartment-in-new-gudauri-loft-2.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/216974344.jpg?k=618af16c293e0fe4e9428bff046cb4c536f206c5307330b6baafd2b70e389d9d&o="
+        "name": {
+            "19.09.2025": "Ski In/Out Apartment in New Gudauri, Loft 2"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.1
+        },
+        "number_of_reviews": {
+            "19.09.2025": 15
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/ski-in-47-out-apartment-in-new-gudauri-loft-2.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/216974344.jpg?k=618af16c293e0fe4e9428bff046cb4c536f206c5307330b6baafd2b70e389d9d&o="
+        }
     },
     {
         "id": "new-gudauri-312",
-        "name": "New Gudauri 312",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 16,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-312.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/421930056.jpg?k=280aab758b0041ca783f9d41b4bf35d790763f28fa68b5167226a0a7b8cb4787&o="
+        "name": {
+            "19.09.2025": "New Gudauri 312"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 16
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-312.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/421930056.jpg?k=280aab758b0041ca783f9d41b4bf35d790763f28fa68b5167226a0a7b8cb4787&o="
+        }
     },
     {
         "id": "gvc-new-gudauri-301",
-        "name": "GVC 301 New Gudauri",
-        "stars": 4,
-        "rating": 9.2,
-        "number_of_reviews": 14,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-new-gudauri-301.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/236863789.jpg?k=e51eecbaf1ad4e218b3c6e65337d0ee230cfd69a594b756e8489e627e32ad355&o="
+        "name": {
+            "19.09.2025": "GVC 301 New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 14
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-new-gudauri-301.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/236863789.jpg?k=e51eecbaf1ad4e218b3c6e65337d0ee230cfd69a594b756e8489e627e32ad355&o="
+        }
     },
     {
         "id": "gvc-new-gudauri-222",
-        "name": "GVC 206 New Gudauri",
-        "stars": 4,
-        "rating": 7.7,
-        "number_of_reviews": 13,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-new-gudauri-222.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/670932028.jpg?k=2256e07dd4c017fcaaa4bd74f9b17856cd75ed36cb4ec67a9496159c2dd31f99&o="
+        "name": {
+            "19.09.2025": "GVC 206 New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 13
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-new-gudauri-222.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/670932028.jpg?k=2256e07dd4c017fcaaa4bd74f9b17856cd75ed36cb4ec67a9496159c2dd31f99&o="
+        }
     },
     {
         "id": "vato-apartment",
-        "name": "Vato Apartment",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 3,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/vato-apartment.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/90301512.jpg?k=51daa58eb3fcbf9c8b43df6f0d53302abe6ea3d9aa7a9e911c9680dd13dff476&o="
+        "name": {
+            "19.09.2025": "Vato Apartment"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 3
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/vato-apartment.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/90301512.jpg?k=51daa58eb3fcbf9c8b43df6f0d53302abe6ea3d9aa7a9e911c9680dd13dff476&o="
+        }
     },
     {
         "id": "gvc-176-new-gudauri",
-        "name": "GVC New Gudauri Alpic Mountain view",
-        "stars": 4,
-        "rating": 8.6,
-        "number_of_reviews": 22,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-176-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/688223731.jpg?k=0fdd233fdce30325868cbccdd054f982df4fc02313005b95adcb4b9f93aac700&o="
+        "name": {
+            "19.09.2025": "GVC New Gudauri Alpic Mountain view"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 22
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-176-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/688223731.jpg?k=0fdd233fdce30325868cbccdd054f982df4fc02313005b95adcb4b9f93aac700&o="
+        }
     },
     {
         "id": "new-gudauri-atrium-139",
-        "name": "New Gudauri Atrium 139",
-        "stars": 4,
-        "rating": 7.8,
-        "number_of_reviews": 17,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-atrium-139.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/387420784.jpg?k=d765cf53b0f97aaca2dcc51176fcc598aa37e238bd4000737ba6273472ee71d9&o="
+        "name": {
+            "19.09.2025": "New Gudauri Atrium 139"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 17
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-atrium-139.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/387420784.jpg?k=d765cf53b0f97aaca2dcc51176fcc598aa37e238bd4000737ba6273472ee71d9&o="
+        }
     },
     {
         "id": "new-gudauri-loft-2-apartment-gudauri1",
-        "name": "New Gudauri Loft 2 Apartment",
-        "stars": 0,
-        "rating": 9.0,
-        "number_of_reviews": 8,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-apartment-gudauri1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/203850539.jpg?k=028e29c222386deac0a8d7c578658e77e6eb2a09ce4b33b29fc334ce21695458&o="
+        "name": {
+            "19.09.2025": "New Gudauri Loft 2 Apartment"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 8
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-apartment-gudauri1.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/203850539.jpg?k=028e29c222386deac0a8d7c578658e77e6eb2a09ce4b33b29fc334ce21695458&o="
+        }
     },
     {
         "id": "new-gudauri-atrium-gudauri",
-        "name": "New Gudauri Atrium 211",
-        "stars": 4,
-        "rating": 8.5,
-        "number_of_reviews": 30,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-atrium-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/501608503.jpg?k=7c149c5d3d681ca7818b775f0184ac2780cf1c045182f8f71191110c016c6604&o="
+        "name": {
+            "19.09.2025": "New Gudauri Atrium 211"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.5
+        },
+        "number_of_reviews": {
+            "19.09.2025": 30
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-atrium-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/501608503.jpg?k=7c149c5d3d681ca7818b775f0184ac2780cf1c045182f8f71191110c016c6604&o="
+        }
     },
     {
         "id": "atrium-gvc-gudauri-suites",
-        "name": "2-room Apartment NFT New Gudauri Atrium Suite",
-        "stars": 4,
-        "rating": 8.8,
-        "number_of_reviews": 15,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/atrium-gvc-gudauri-suites.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/409087770.jpg?k=bd359d3b993548e2ccb3033e4ec82c0330fd72f91bdd445dfc0aacbf5d336dd7&o="
+        "name": {
+            "19.09.2025": "2-room Apartment NFT New Gudauri Atrium Suite"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 15
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/atrium-gvc-gudauri-suites.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/409087770.jpg?k=bd359d3b993548e2ccb3033e4ec82c0330fd72f91bdd445dfc0aacbf5d336dd7&o="
+        }
     },
     {
         "id": "3-bedroom-condo-with-free-parking-on-premises",
-        "name": "3 bedroom condo with free parking on premises",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 38,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/3-bedroom-condo-with-free-parking-on-premises.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/340031993.jpg?k=7a22c9aa740aa672b589b2fe004f581f510f714b210e3fb3765ee443cbf9a3d4&o="
+        "name": {
+            "19.09.2025": "3 bedroom condo with free parking on premises"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 38
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/3-bedroom-condo-with-free-parking-on-premises.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/340031993.jpg?k=7a22c9aa740aa672b589b2fe004f581f510f714b210e3fb3765ee443cbf9a3d4&o="
+        }
     },
     {
         "id": "apartment-in-new-gudauri-gudauri",
-        "name": "Apartment for 8 in New Gudauri",
-        "stars": 3,
-        "rating": 8.1,
-        "number_of_reviews": 10,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/apartment-in-new-gudauri-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/328806943.jpg?k=38b52b2c1b58be8d8b18d670fa91f3dd29120a1408df2d563e42c6cf9b96fd85&o="
+        "name": {
+            "19.09.2025": "Apartment for 8 in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.1
+        },
+        "number_of_reviews": {
+            "19.09.2025": 10
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/apartment-in-new-gudauri-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/328806943.jpg?k=38b52b2c1b58be8d8b18d670fa91f3dd29120a1408df2d563e42c6cf9b96fd85&o="
+        }
     },
     {
         "id": "new-gudauri-alpik-309",
-        "name": "New Gudauri Alpic 309",
-        "stars": 3,
-        "rating": 9.4,
-        "number_of_reviews": 7,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-alpik-309.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/389704994.jpg?k=603e9dfa9cc9b599c8815f1c161cd3dab6a08f5299dc03c62ffb9e03189f28cf&o="
+        "name": {
+            "19.09.2025": "New Gudauri Alpic 309"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 7
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-alpik-309.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/389704994.jpg?k=603e9dfa9cc9b599c8815f1c161cd3dab6a08f5299dc03c62ffb9e03189f28cf&o="
+        }
     },
     {
         "id": "new-gudauri-redco-f1",
-        "name": "New Gudauri Redco F1",
-        "stars": 0,
-        "rating": 10.0,
-        "number_of_reviews": 4,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-redco-f1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/628422813.jpg?k=347b33c07aedc1e015cb668ce4b6484af0a46305bfca599f76556c8bbf01b820&o="
+        "name": {
+            "19.09.2025": "New Gudauri Redco F1"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 4
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-redco-f1.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/628422813.jpg?k=347b33c07aedc1e015cb668ce4b6484af0a46305bfca599f76556c8bbf01b820&o="
+        }
     },
     {
         "id": "evdo-apartments-f2-lovely-studio",
-        "name": "Evdo Apartments F2 Lovely Studio",
-        "stars": 3,
-        "rating": 9.8,
-        "number_of_reviews": 9,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/evdo-apartments-f2-lovely-studio.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/525574508.jpg?k=98dce19b8b8b5aaee8271ea4939d48137cdc86e80d0bd276bda9bbab830a80f9&o="
+        "name": {
+            "19.09.2025": "Evdo Apartments F2 Lovely Studio"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 9
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/evdo-apartments-f2-lovely-studio.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/525574508.jpg?k=98dce19b8b8b5aaee8271ea4939d48137cdc86e80d0bd276bda9bbab830a80f9&o="
+        }
     },
     {
         "id": "new-gudauri-tweens-gudauri",
-        "name": "Redco, New Gudauri, Twins",
-        "stars": 3,
-        "rating": 9.1,
-        "number_of_reviews": 9,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-tweens-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/372638706.jpg?k=cb052037fa1f3017e29886b016f96f0a4cc29814d1ac7f359c57bcc88ecc1c34&o="
+        "name": {
+            "19.09.2025": "Redco, New Gudauri, Twins"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.1
+        },
+        "number_of_reviews": {
+            "19.09.2025": 9
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-tweens-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/372638706.jpg?k=cb052037fa1f3017e29886b016f96f0a4cc29814d1ac7f359c57bcc88ecc1c34&o="
+        }
     },
     {
         "id": "go-gudauri-the-atrium-residence",
-        "name": "Go-Gudauri The Atrium Residence",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 50,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/go-gudauri-the-atrium-residence.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/697253074.jpg?k=89bd3f0c2c5dd091ec496c82d37b23cef5a3e63b1445ea738174f1b331147812&o="
+        "name": {
+            "19.09.2025": "Go-Gudauri The Atrium Residence"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 50
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/go-gudauri-the-atrium-residence.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/697253074.jpg?k=89bd3f0c2c5dd091ec496c82d37b23cef5a3e63b1445ea738174f1b331147812&o="
+        }
     },
     {
         "id": "new-gudauri-goodhost-apartments",
-        "name": "New Gudauri GoodHost Apartments",
-        "stars": 3,
-        "rating": 8.9,
-        "number_of_reviews": 104,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-goodhost-apartments.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/472370364.jpg?k=c585a2d9d7620ff1af8b8738752bdd8bfcbed22d19a00e7b379436f6d99e6be8&o="
+        "name": {
+            "19.09.2025": "New Gudauri GoodHost Apartments"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 104
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-goodhost-apartments.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/472370364.jpg?k=c585a2d9d7620ff1af8b8738752bdd8bfcbed22d19a00e7b379436f6d99e6be8&o="
+        }
     },
     {
         "id": "evdo-apartments-f4-white-stay",
-        "name": "Evdo Apartments F4 White Stay",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 4,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/evdo-apartments-f4-white-stay.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/516243445.jpg?k=03a02828b20617ae671f00b09b9d13b507eb35a3a04df9fe0dddf7e8c8a8a45a&o="
+        "name": {
+            "19.09.2025": "Evdo Apartments F4 White Stay"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 4
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/evdo-apartments-f4-white-stay.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/516243445.jpg?k=03a02828b20617ae671f00b09b9d13b507eb35a3a04df9fe0dddf7e8c8a8a45a&o="
+        }
     },
     {
         "id": "frozen-view",
-        "name": "Frozen View New Gudauri",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 69,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/frozen-view.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/182745138.jpg?k=65e46902ed021ee9bd660573d9220ca9592b68ecc470a73cd2aee024231f2096&o="
+        "name": {
+            "19.09.2025": "Frozen View New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "19.09.2025": 69
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/frozen-view.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/182745138.jpg?k=65e46902ed021ee9bd660573d9220ca9592b68ecc470a73cd2aee024231f2096&o="
+        }
     },
     {
         "id": "duplex-vip-full-mountain-view-near-gondola",
-        "name": "Duplex in four seasons new gudauri near gondola",
-        "stars": 4,
-        "rating": 9.8,
-        "number_of_reviews": 5,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/duplex-vip-full-mountain-view-near-gondola.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/497595162.jpg?k=d0e2c5e088996cd2e23065032794f313655b7be7348b41824d2bcd0fe766878b&o="
+        "name": {
+            "19.09.2025": "Duplex in four seasons new gudauri near gondola"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 9.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 5
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/duplex-vip-full-mountain-view-near-gondola.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/497595162.jpg?k=d0e2c5e088996cd2e23065032794f313655b7be7348b41824d2bcd0fe766878b&o="
+        }
     },
     {
         "id": "gudauri-luxury-apartments",
-        "name": "4-Bedroom Luxury Apartment in New Gudauri",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 12,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-luxury-apartments.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/430905763.jpg?k=4d09e6a4d7b004d3af9663cc91c6d1286656577f9b499f4c7623d8b248eb52eb&o="
+        "name": {
+            "19.09.2025": "4-Bedroom Luxury Apartment in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 12
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gudauri-luxury-apartments.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/430905763.jpg?k=4d09e6a4d7b004d3af9663cc91c6d1286656577f9b499f4c7623d8b248eb52eb&o="
+        }
     },
     {
         "id": "ati-ambavi-gudauri",
-        "name": "Ati Ambavi Botique Hotel Gudauri",
-        "stars": 4,
-        "rating": 9.4,
-        "number_of_reviews": 273,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/ati-ambavi-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/408637233.jpg?k=2418a6043e53e6f05bcd6a194fc41e56fe61152e31a96ee2db204ad923f69f4e&o="
+        "name": {
+            "19.09.2025": "Ati Ambavi Botique Hotel Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "19.09.2025": 273
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/ati-ambavi-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/408637233.jpg?k=2418a6043e53e6f05bcd6a194fc41e56fe61152e31a96ee2db204ad923f69f4e&o="
+        }
     },
     {
         "id": "gvc-4-room-421-new-gudauri-gudauri",
-        "name": "GVC 4-room 421 New Gudauri",
-        "stars": 4,
-        "rating": 7.9,
-        "number_of_reviews": 37,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gvc-4-room-421-new-gudauri-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/288637396.jpg?k=4acd57921f7e483cdaf61b44a5d77fb1b5144d24fc101c034477648579f0b384&o="
+        "name": {
+            "19.09.2025": "GVC 4-room 421 New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 7.9
+        },
+        "number_of_reviews": {
+            "19.09.2025": 37
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/gvc-4-room-421-new-gudauri-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/288637396.jpg?k=4acd57921f7e483cdaf61b44a5d77fb1b5144d24fc101c034477648579f0b384&o="
+        }
     },
     {
         "id": "pine-chalets-by-ka-hotels",
-        "name": "Pine Chalets by KA Group",
-        "stars": 4,
-        "rating": 8.0,
-        "number_of_reviews": 103,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/pine-chalets-by-ka-hotels.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/415270523.jpg?k=184cf21997afd5b5695ab697da75352ed71829ab3e267e98a37f2bab75ba3800&o="
+        "name": {
+            "19.09.2025": "Pine Chalets by KA Group"
+        },
+        "stars": {
+            "19.09.2025": 4
+        },
+        "rating": {
+            "19.09.2025": 8.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 103
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/pine-chalets-by-ka-hotels.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/415270523.jpg?k=184cf21997afd5b5695ab697da75352ed71829ab3e267e98a37f2bab75ba3800&o="
+        }
     },
     {
         "id": "chalet-in-gudauri",
-        "name": "Chalet In Gudauri",
-        "stars": 0,
-        "rating": 9.2,
-        "number_of_reviews": 45,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/chalet-in-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/657345747.jpg?k=1497d4bbac38f90d0b420a27164afbc7844029c89f65242cad2605efb697fb76&o="
+        "name": {
+            "19.09.2025": "Chalet In Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 45
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/chalet-in-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/657345747.jpg?k=1497d4bbac38f90d0b420a27164afbc7844029c89f65242cad2605efb697fb76&o="
+        }
     },
     {
         "id": "snow-time-cottage",
-        "name": "Snow Time Cottage",
-        "stars": 0,
-        "rating": 9.0,
-        "number_of_reviews": 6,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/snow-time-cottage.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/468381492.jpg?k=5a80cda7fa17891e1c9a79b2fca62afd2d30707370ada949f81da03d2084fc1d&o="
+        "name": {
+            "19.09.2025": "Snow Time Cottage"
+        },
+        "stars": {
+            "19.09.2025": 0
+        },
+        "rating": {
+            "19.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "19.09.2025": 6
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/snow-time-cottage.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/468381492.jpg?k=5a80cda7fa17891e1c9a79b2fca62afd2d30707370ada949f81da03d2084fc1d&o="
+        }
     },
     {
         "id": "3-room-apartment-gvc-404-new-gudauri",
-        "name": "3-room Apartment NFT New Gudauri 404",
-        "stars": 3,
-        "rating": 8.8,
-        "number_of_reviews": 14,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/3-room-apartment-gvc-404-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/517461173.jpg?k=2c871d5ba17343ec8973b0b7e8465b3aec4947bf4a5c173d6ebbd06e1702fbc1&o="
+        "name": {
+            "19.09.2025": "3-room Apartment NFT New Gudauri 404"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "19.09.2025": 14
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/3-room-apartment-gvc-404-new-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/517461173.jpg?k=2c871d5ba17343ec8973b0b7e8465b3aec4947bf4a5c173d6ebbd06e1702fbc1&o="
+        }
     },
     {
         "id": "apartment-alpine-by-atrium-gudauri",
-        "name": "Apartment ALPINE by Atrium, New Gudauri",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 22,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/apartment-alpine-by-atrium-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/235025936.jpg?k=e9dc2338fa31c60df0d948b0d2175deca3275e50455cf1a630f54eadd17d6066&o="
+        "name": {
+            "19.09.2025": "Apartment ALPINE by Atrium, New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "19.09.2025": 22
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/apartment-alpine-by-atrium-gudauri.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/235025936.jpg?k=e9dc2338fa31c60df0d948b0d2175deca3275e50455cf1a630f54eadd17d6066&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-gudauri1234",
-        "name": "Cozy appartement, loft2 in New Gudauri",
-        "stars": 3,
-        "rating": 8.7,
-        "number_of_reviews": 19,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-gudauri1234.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/176537323.jpg?k=e23c0a1eb3fbec2411b4485f55b29c8f31dc6c1a4671439493a63c8286de957e&o="
+        "name": {
+            "19.09.2025": "Cozy appartement, loft2 in New Gudauri"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 8.7
+        },
+        "number_of_reviews": {
+            "19.09.2025": 19
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-gudauri1234.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/176537323.jpg?k=e23c0a1eb3fbec2411b4485f55b29c8f31dc6c1a4671439493a63c8286de957e&o="
+        }
     },
     {
         "id": "chrdili-residences-new-gudauri-redco-loft-1",
-        "name": "Chrdili Residences New Gudauri (Redco Loft 1)",
-        "stars": 3,
-        "rating": 9.2,
-        "number_of_reviews": 94,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "19.09.2025",
-        "link": "https://www.booking.com/hotel/ge/chrdili-residences-new-gudauri-redco-loft-1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/238409738.jpg?k=3bf59f0807b900ee48280e9132fe4417e37d3a69c5f8f25730b3043f37de427e&o="
+        "name": {
+            "19.09.2025": "Chrdili Residences New Gudauri (Redco Loft 1)"
+        },
+        "stars": {
+            "19.09.2025": 3
+        },
+        "rating": {
+            "19.09.2025": 9.2
+        },
+        "number_of_reviews": {
+            "19.09.2025": 94
+        },
+        "district": {
+            "19.09.2025": null
+        },
+        "city": {
+            "19.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "19.09.2025": false
+        },
+        "link": {
+            "19.09.2025": "https://www.booking.com/hotel/ge/chrdili-residences-new-gudauri-redco-loft-1.html"
+        },
+        "foto": {
+            "19.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/238409738.jpg?k=3bf59f0807b900ee48280e9132fe4417e37d3a69c5f8f25730b3043f37de427e&o="
+        }
     },
     {
         "id": "gudauri-freerider",
-        "name": "Gudauri Freerider Hotel",
-        "stars": 3,
-        "rating": 8.2,
-        "number_of_reviews": 37,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-freerider.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/242970622.jpg?k=44322a481db878ad1194ce113ae7ad1644c7587d7013328977ca8682924962ba&o="
+        "name": {
+            "20.09.2025": "Gudauri Freerider Hotel"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.2
+        },
+        "number_of_reviews": {
+            "20.09.2025": 37
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/gudauri-freerider.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/242970622.jpg?k=44322a481db878ad1194ce113ae7ad1644c7587d7013328977ca8682924962ba&o="
+        }
     },
     {
         "id": "skio",
-        "name": "Skio",
-        "stars": 3,
-        "rating": 8.8,
-        "number_of_reviews": 179,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/skio.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/441016030.jpg?k=280a8b9062998e1a69a919e9ec33018185feea7d7f698768812f8f6c4fdbc149&o="
+        "name": {
+            "20.09.2025": "Skio"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.8
+        },
+        "number_of_reviews": {
+            "20.09.2025": 179
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/skio.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/441016030.jpg?k=280a8b9062998e1a69a919e9ec33018185feea7d7f698768812f8f6c4fdbc149&o="
+        }
     },
     {
         "id": "soncho-gudauri",
-        "name": "Soncho Gudauri",
-        "stars": 0,
-        "rating": 8.6,
-        "number_of_reviews": 85,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/soncho-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/641001305.jpg?k=ea474e3eb21cbb4ac75efa923abc43f2b03ebde82ad4a30d2991095e2a217d22&o="
+        "name": {
+            "20.09.2025": "Soncho Gudauri"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 8.6
+        },
+        "number_of_reviews": {
+            "20.09.2025": 85
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/soncho-gudauri.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/641001305.jpg?k=ea474e3eb21cbb4ac75efa923abc43f2b03ebde82ad4a30d2991095e2a217d22&o="
+        }
     },
     {
         "id": "khizina-rezo-rezo-hut",
-        "name": "RezoHut",
-        "stars": 0,
-        "rating": 9.4,
-        "number_of_reviews": 94,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/khizina-rezo-rezo-hut.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/444836620.jpg?k=12c0d9d197b2f8857c1e0a76c25b9b23ba1bffb4a41b4e22066bde73c7176beb&o="
+        "name": {
+            "20.09.2025": "RezoHut"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "20.09.2025": 94
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/khizina-rezo-rezo-hut.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/444836620.jpg?k=12c0d9d197b2f8857c1e0a76c25b9b23ba1bffb4a41b4e22066bde73c7176beb&o="
+        }
     },
     {
         "id": "atrium-gudauri1",
-        "name": "Atrium, new Gudauri",
-        "stars": 0,
-        "rating": 7.8,
-        "number_of_reviews": 4,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/atrium-gudauri1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/628356257.jpg?k=9fd80483ad7048bb7db4eb83a5e400007ecb4bdf4b63b8c30411545d5e447e31&o="
+        "name": {
+            "20.09.2025": "Atrium, new Gudauri"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 7.8
+        },
+        "number_of_reviews": {
+            "20.09.2025": 4
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/atrium-gudauri1.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/628356257.jpg?k=9fd80483ad7048bb7db4eb83a5e400007ecb4bdf4b63b8c30411545d5e447e31&o="
+        }
     },
     {
         "id": "deka",
-        "name": "Hotel Deka Gudauri",
-        "stars": 0,
-        "rating": 9.0,
-        "number_of_reviews": 220,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/deka.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/231046050.jpg?k=f5f5289cb5ebc7980de99887d50d7ee7eea8e970d832b04f5a15952c12c6652f&o="
+        "name": {
+            "20.09.2025": "Hotel Deka Gudauri"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 220
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/deka.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/231046050.jpg?k=f5f5289cb5ebc7980de99887d50d7ee7eea8e970d832b04f5a15952c12c6652f&o="
+        }
     },
     {
         "id": "club-2100-gudauri",
-        "name": "Hotel Club-2100",
-        "stars": 4,
-        "rating": 8.3,
-        "number_of_reviews": 189,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/club-2100-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/412227648.jpg?k=d7e0d75c467f3580c1b5619280ea8990ce1af79e2652084df0efcceb70a020fa&o="
+        "name": {
+            "20.09.2025": "Hotel Club-2100"
+        },
+        "stars": {
+            "20.09.2025": 4
+        },
+        "rating": {
+            "20.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "20.09.2025": 189
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/club-2100-gudauri.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/412227648.jpg?k=d7e0d75c467f3580c1b5619280ea8990ce1af79e2652084df0efcceb70a020fa&o="
+        }
     },
     {
         "id": "family-parnas-2250",
-        "name": "Family Hotel Parnas 2250",
-        "stars": 2,
-        "rating": 9.0,
-        "number_of_reviews": 9,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/family-parnas-2250.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/618047608.jpg?k=4cf19d7690ab91dd70a4bac08cb43a3533779d43607780219713b60d050edf6f&o="
+        "name": {
+            "20.09.2025": "Family Hotel Parnas 2250"
+        },
+        "stars": {
+            "20.09.2025": 2
+        },
+        "rating": {
+            "20.09.2025": 9.0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 9
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/family-parnas-2250.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/618047608.jpg?k=4cf19d7690ab91dd70a4bac08cb43a3533779d43607780219713b60d050edf6f&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-gudauri1",
-        "name": "New Gudauri Apartment",
-        "stars": 3,
-        "rating": 8.9,
-        "number_of_reviews": 16,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-gudauri1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/52509954.jpg?k=5562b1c8b2c532a043cf989f7e5780c5c5a4b797e2ad019bb4df14d3ae8a37ee&o="
+        "name": {
+            "20.09.2025": "New Gudauri Apartment"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.9
+        },
+        "number_of_reviews": {
+            "20.09.2025": 16
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-gudauri1.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/52509954.jpg?k=5562b1c8b2c532a043cf989f7e5780c5c5a4b797e2ad019bb4df14d3ae8a37ee&o="
+        }
     },
     {
         "id": "new-gudauri-suites-gudauri123",
-        "name": "New Gudauri Suites",
-        "stars": 3,
-        "rating": 9.3,
-        "number_of_reviews": 17,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-suites-gudauri123.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/218093397.jpg?k=4ddf79397db792397c8e30fd4045c5c7ee65bffe3c33ec8a1c5b8a448476611b&o="
+        "name": {
+            "20.09.2025": "New Gudauri Suites"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "20.09.2025": 17
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-suites-gudauri123.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/218093397.jpg?k=4ddf79397db792397c8e30fd4045c5c7ee65bffe3c33ec8a1c5b8a448476611b&o="
+        }
     },
     {
         "id": "maisako-39-s-new-gudauri-apartment",
-        "name": "Maisako's New Gudauri Apartment",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 20,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/maisako-39-s-new-gudauri-apartment.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/177520135.jpg?k=9114aec1f04ad0f19489a78936118b5aeeb8018e59b89b75458cd0de3a988fe8&o="
+        "name": {
+            "20.09.2025": "Maisako's New Gudauri Apartment"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "20.09.2025": 20
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/maisako-39-s-new-gudauri-apartment.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/177520135.jpg?k=9114aec1f04ad0f19489a78936118b5aeeb8018e59b89b75458cd0de3a988fe8&o="
+        }
     },
     {
         "id": "zemo-aragvi",
-        "name": "Hotel Zemo Aragvi",
-        "stars": 0,
-        "rating": 7.3,
-        "number_of_reviews": 29,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/zemo-aragvi.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/696598502.jpg?k=57bd74c43425fd9aa35dc2dd9dc0fc9dee2e3d98995b186a73b677fb94df089f&o="
+        "name": {
+            "20.09.2025": "Hotel Zemo Aragvi"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 7.3
+        },
+        "number_of_reviews": {
+            "20.09.2025": 29
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/zemo-aragvi.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/696598502.jpg?k=57bd74c43425fd9aa35dc2dd9dc0fc9dee2e3d98995b186a73b677fb94df089f&o="
+        }
     },
     {
         "id": "gagieti-gudauri",
-        "name": "Gagieti",
-        "stars": 0,
-        "rating": 9.4,
-        "number_of_reviews": 12,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gagieti-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/155454559.jpg?k=3af20006016cc424c7b83c148d6b65c0d5669e40d30656f6b1d1b2d7ab3fbc57&o="
+        "name": {
+            "20.09.2025": "Gagieti"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "20.09.2025": 12
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/gagieti-gudauri.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/155454559.jpg?k=3af20006016cc424c7b83c148d6b65c0d5669e40d30656f6b1d1b2d7ab3fbc57&o="
+        }
     },
     {
         "id": "gudauri-star",
-        "name": "Gudauri Star",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 2,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-star.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/691287439.jpg?k=53a56bea84d6c8110c95704759444b26f1bb08be936fb3b4306e4a944b0946fc&o="
+        "name": {
+            "20.09.2025": "Gudauri Star"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 2
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/gudauri-star.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/691287439.jpg?k=53a56bea84d6c8110c95704759444b26f1bb08be936fb3b4306e4a944b0946fc&o="
+        }
     },
     {
         "id": "gudauri-travel-apartments-in-loft-new-gudauri",
-        "name": "New Gudauri Lofts by Gudauri Travel",
-        "stars": 3,
-        "rating": 8.4,
-        "number_of_reviews": 62,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-loft-new-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/694926880.jpg?k=47e023c18e850d2fab20785dcec03acd7e7f66d8ad0570354dc8b5dff16a9c0a&o="
+        "name": {
+            "20.09.2025": "New Gudauri Lofts by Gudauri Travel"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.4
+        },
+        "number_of_reviews": {
+            "20.09.2025": 62
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/gudauri-travel-apartments-in-loft-new-gudauri.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/694926880.jpg?k=47e023c18e850d2fab20785dcec03acd7e7f66d8ad0570354dc8b5dff16a9c0a&o="
+        }
     },
     {
         "id": "new-gudauri-loft-2-gudauri12345678",
-        "name": "New Gudauri, Loft 2",
-        "stars": 0,
-        "rating": 9.6,
-        "number_of_reviews": 18,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-gudauri12345678.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/293054477.jpg?k=c1bafb2cee25c1967f71705a78c1e6149a5c5446d570488774c8e4a8f8ff9421&o="
+        "name": {
+            "20.09.2025": "New Gudauri, Loft 2"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "20.09.2025": 18
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-gudauri12345678.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/293054477.jpg?k=c1bafb2cee25c1967f71705a78c1e6149a5c5446d570488774c8e4a8f8ff9421&o="
+        }
     },
     {
         "id": "gudauri-burdjanadze-apartments",
-        "name": "2-room Apartment NFT Gudauri Penta 503",
-        "stars": 3,
-        "rating": 8.3,
-        "number_of_reviews": 51,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-burdjanadze-apartments.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/232929473.jpg?k=e0415c17f5db0ab74d2e14f29270464c4f882744abc85733a95fd0f75c294341&o="
+        "name": {
+            "20.09.2025": "2-room Apartment NFT Gudauri Penta 503"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "20.09.2025": 51
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/gudauri-burdjanadze-apartments.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/232929473.jpg?k=e0415c17f5db0ab74d2e14f29270464c4f882744abc85733a95fd0f75c294341&o="
+        }
     },
     {
         "id": "kashmiri-kitchens",
-        "name": "Kashmiri kitchens hotel",
-        "stars": 3,
-        "rating": 8.0,
-        "number_of_reviews": 1,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/kashmiri-kitchens.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/685262684.jpg?k=03c79c05ec4291f1d0caac7be40c9ea5aa322f35e0067039baab74d90ab9f345&o="
+        "name": {
+            "20.09.2025": "Kashmiri kitchens hotel"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 1
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/kashmiri-kitchens.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/685262684.jpg?k=03c79c05ec4291f1d0caac7be40c9ea5aa322f35e0067039baab74d90ab9f345&o="
+        }
     },
     {
         "id": "apart-quot-mgzavrebi-quot",
-        "name": "Apartment N503 Gudauri Loft",
-        "stars": 3,
-        "rating": 8.3,
-        "number_of_reviews": 15,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/apart-quot-mgzavrebi-quot.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/424275383.jpg?k=a7b957d188faf1071f24dba53ca785f3f74ed055d330910b2692e5111d7aa403&o="
+        "name": {
+            "20.09.2025": "Apartment N503 Gudauri Loft"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.3
+        },
+        "number_of_reviews": {
+            "20.09.2025": 15
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/apart-quot-mgzavrebi-quot.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/424275383.jpg?k=a7b957d188faf1071f24dba53ca785f3f74ed055d330910b2692e5111d7aa403&o="
+        }
     },
     {
         "id": "kala-collection-timber",
-        "name": "Kala Collection-Timber",
-        "stars": 0,
-        "rating": 0,
-        "number_of_reviews": 0,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/kala-collection-timber.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/738755995.jpg?k=a45a54fdae4283c312e721cbdfa4e251248707b433de895f9b9e82850aa8ed2c&o="
+        "name": {
+            "20.09.2025": "Kala Collection-Timber"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 0
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/kala-collection-timber.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/738755995.jpg?k=a45a54fdae4283c312e721cbdfa4e251248707b433de895f9b9e82850aa8ed2c&o="
+        }
     },
     {
         "id": "new-gudauri-superiors-f3-amp-f4-by-gudauri-travel",
-        "name": "New Gudauri Four Seasons F3 by Gudauri Travel",
-        "stars": 3,
-        "rating": 10.0,
-        "number_of_reviews": 2,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-superiors-f3-amp-f4-by-gudauri-travel.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/685558477.jpg?k=0a1e7905d9f3a8f9ad1db21d0afc3792b7cf31071a84af070d81d95fb6dfb5f7&o="
+        "name": {
+            "20.09.2025": "New Gudauri Four Seasons F3 by Gudauri Travel"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 10.0
+        },
+        "number_of_reviews": {
+            "20.09.2025": 2
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-superiors-f3-amp-f4-by-gudauri-travel.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/685558477.jpg?k=0a1e7905d9f3a8f9ad1db21d0afc3792b7cf31071a84af070d81d95fb6dfb5f7&o="
+        }
     },
     {
         "id": "sunny-studio-in-gudauri",
-        "name": "Sunny Studio in Gudauri",
-        "stars": 3,
-        "rating": 8.5,
-        "number_of_reviews": 2,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/sunny-studio-in-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/420280377.jpg?k=3851b9482b101823db4b12bb9d381fa371114c4011ee24adad1f4c4188fb0b25&o="
+        "name": {
+            "20.09.2025": "Sunny Studio in Gudauri"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 8.5
+        },
+        "number_of_reviews": {
+            "20.09.2025": 2
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/sunny-studio-in-gudauri.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/420280377.jpg?k=3851b9482b101823db4b12bb9d381fa371114c4011ee24adad1f4c4188fb0b25&o="
+        }
     },
     {
         "id": "studio-in-kazbegi-district",
-        "name": "New Gudauri Sunny studio",
-        "stars": 3,
-        "rating": 9.6,
-        "number_of_reviews": 6,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/studio-in-kazbegi-district.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/415644756.jpg?k=700b5ecc0d2f05c2a859f8dd19eaee71488511bada37f8cf5dbb3f36736f83c8&o="
+        "name": {
+            "20.09.2025": "New Gudauri Sunny studio"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "20.09.2025": 6
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/studio-in-kazbegi-district.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/415644756.jpg?k=700b5ecc0d2f05c2a859f8dd19eaee71488511bada37f8cf5dbb3f36736f83c8&o="
+        }
     },
     {
         "id": "soko-aura",
-        "name": "Soko Aura",
-        "stars": 3,
-        "rating": 9.4,
-        "number_of_reviews": 9,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/soko-aura.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/619979416.jpg?k=7f2aa3516046e88f1de90f440c84f4d37dd53ba3f533c74990598d6a42146726&o="
+        "name": {
+            "20.09.2025": "Soko Aura"
+        },
+        "stars": {
+            "20.09.2025": 3
+        },
+        "rating": {
+            "20.09.2025": 9.4
+        },
+        "number_of_reviews": {
+            "20.09.2025": 9
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/soko-aura.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/619979416.jpg?k=7f2aa3516046e88f1de90f440c84f4d37dd53ba3f533c74990598d6a42146726&o="
+        }
     },
     {
         "id": "toni",
-        "name": "Hotel Toni",
-        "stars": 0,
-        "rating": 9.6,
-        "number_of_reviews": 44,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "20.09.2025",
-        "link": "https://www.booking.com/hotel/ge/toni.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/175789401.jpg?k=22faf0ac2149d5c8e6c08577f496450ecada14c70a9640507676260eaf750977&o="
+        "name": {
+            "20.09.2025": "Hotel Toni"
+        },
+        "stars": {
+            "20.09.2025": 0
+        },
+        "rating": {
+            "20.09.2025": 9.6
+        },
+        "number_of_reviews": {
+            "20.09.2025": 44
+        },
+        "district": {
+            "20.09.2025": null
+        },
+        "city": {
+            "20.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "20.09.2025": false
+        },
+        "link": {
+            "20.09.2025": "https://www.booking.com/hotel/ge/toni.html"
+        },
+        "foto": {
+            "20.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/175789401.jpg?k=22faf0ac2149d5c8e6c08577f496450ecada14c70a9640507676260eaf750977&o="
+        }
     },
     {
         "id": "new-gudauri-loft-2-kazbegi-district-gudauri-georgia",
-        "name": "New Gudauri loft1",
-        "stars": 0,
-        "rating": 9.3,
-        "number_of_reviews": 26,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "21.09.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-kazbegi-district-gudauri-georgia.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/238023176.jpg?k=3ccbed4a9acb07e519aa8f1bdfacac0bcc8e0452a20d859114a103f5192a67b1&o="
+        "name": {
+            "21.09.2025": "New Gudauri loft1"
+        },
+        "stars": {
+            "21.09.2025": 0
+        },
+        "rating": {
+            "21.09.2025": 9.3
+        },
+        "number_of_reviews": {
+            "21.09.2025": 26
+        },
+        "district": {
+            "21.09.2025": null
+        },
+        "city": {
+            "21.09.2025": "Gudauri"
+        },
+        "new_mark": {
+            "21.09.2025": false
+        },
+        "link": {
+            "21.09.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-kazbegi-district-gudauri-georgia.html"
+        },
+        "foto": {
+            "21.09.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/238023176.jpg?k=3ccbed4a9acb07e519aa8f1bdfacac0bcc8e0452a20d859114a103f5192a67b1&o="
+        }
     },
     {
         "id": "gogi-ski-resort",
-        "name": "Gogi Resort",
-        "stars": 0,
-        "rating": 8.5,
-        "number_of_reviews": 176,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/gogi-ski-resort.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/567235988.jpg?k=579cb0772d238ced363c3f9cd456b288e07130c6b0019c9c4905a81aeac83fb6&o="
+        "name": {
+            "03.10.2025": "Gogi Resort"
+        },
+        "stars": {
+            "03.10.2025": 0
+        },
+        "rating": {
+            "03.10.2025": 8.5
+        },
+        "number_of_reviews": {
+            "03.10.2025": 176
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/gogi-ski-resort.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/567235988.jpg?k=579cb0772d238ced363c3f9cd456b288e07130c6b0019c9c4905a81aeac83fb6&o="
+        }
     },
     {
         "id": "new-gudauri-loft-1",
-        "name": "New Gudauri Loft #1,Room 411, 412",
-        "stars": 3,
-        "rating": 8.5,
-        "number_of_reviews": 26,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/739340304.jpg?k=47a53798277043cfdcc5ffb7e4f78d5d6f0611dab348ff7b5ca00928b8ff70a7&o="
+        "name": {
+            "03.10.2025": "New Gudauri Loft #1,Room 411, 412"
+        },
+        "stars": {
+            "03.10.2025": 3
+        },
+        "rating": {
+            "03.10.2025": 8.5
+        },
+        "number_of_reviews": {
+            "03.10.2025": 26
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-1.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/739340304.jpg?k=47a53798277043cfdcc5ffb7e4f78d5d6f0611dab348ff7b5ca00928b8ff70a7&o="
+        }
     },
     {
         "id": "guest-house-veranda",
-        "name": "Hotel VERANDA",
-        "stars": 0,
-        "rating": 9.2,
-        "number_of_reviews": 31,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/guest-house-veranda.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/334442220.jpg?k=aab43ad009e6664b08254887b5f4ea49fac665b97a40a73085db41f0b30aa42b&o="
+        "name": {
+            "03.10.2025": "Hotel VERANDA"
+        },
+        "stars": {
+            "03.10.2025": 0
+        },
+        "rating": {
+            "03.10.2025": 9.2
+        },
+        "number_of_reviews": {
+            "03.10.2025": 31
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/guest-house-veranda.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/334442220.jpg?k=aab43ad009e6664b08254887b5f4ea49fac665b97a40a73085db41f0b30aa42b&o="
+        }
     },
     {
         "id": "gudauri-hut-hotel",
-        "name": "Gudauri Hut Hotel",
-        "stars": 0,
-        "rating": 8.4,
-        "number_of_reviews": 67,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/gudauri-hut-hotel.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/122631909.jpg?k=e36e0c6918018aa1082ae8bf770ceefe2c288b65938a84b617a58323e5c59ecb&o="
+        "name": {
+            "03.10.2025": "Gudauri Hut Hotel"
+        },
+        "stars": {
+            "03.10.2025": 0
+        },
+        "rating": {
+            "03.10.2025": 8.4
+        },
+        "number_of_reviews": {
+            "03.10.2025": 67
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/gudauri-hut-hotel.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/122631909.jpg?k=e36e0c6918018aa1082ae8bf770ceefe2c288b65938a84b617a58323e5c59ecb&o="
+        }
     },
     {
         "id": "new-gudauri-loft-1-apart-78-83",
-        "name": "Gudauri New Loft 1 TOPHIT",
-        "stars": 3,
-        "rating": 8.8,
-        "number_of_reviews": 51,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-1-apart-78-83.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/397890650.jpg?k=2b581bf40033441e364afce92da58983d59ee9f33990ad7b34e7cc49ba01abdf&o="
+        "name": {
+            "03.10.2025": "Gudauri New Loft 1 TOPHIT"
+        },
+        "stars": {
+            "03.10.2025": 3
+        },
+        "rating": {
+            "03.10.2025": 8.8
+        },
+        "number_of_reviews": {
+            "03.10.2025": 51
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-1-apart-78-83.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/397890650.jpg?k=2b581bf40033441e364afce92da58983d59ee9f33990ad7b34e7cc49ba01abdf&o="
+        }
     },
     {
         "id": "new-gudauri-apartment-belle-epoque-with-a-terrace-new-gudauri1",
-        "name": "New Gudauri Apartment Belle Epoque With a Terrace",
-        "stars": 3,
-        "rating": 4.7,
-        "number_of_reviews": 3,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-apartment-belle-epoque-with-a-terrace-new-gudauri1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/239868133.jpg?k=deddfb55a8ac5f224b38ba5f0477992cce9c3efda690ee6c9a798433b350365f&o="
+        "name": {
+            "03.10.2025": "New Gudauri Apartment Belle Epoque With a Terrace"
+        },
+        "stars": {
+            "03.10.2025": 3
+        },
+        "rating": {
+            "03.10.2025": 4.7
+        },
+        "number_of_reviews": {
+            "03.10.2025": 3
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/new-gudauri-apartment-belle-epoque-with-a-terrace-new-gudauri1.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/239868133.jpg?k=deddfb55a8ac5f224b38ba5f0477992cce9c3efda690ee6c9a798433b350365f&o="
+        }
     },
     {
         "id": "gudaski-apartments",
-        "name": "GUDASKI Apartments, New Gudauri LOFT2 & LOFT1",
-        "stars": 3,
-        "rating": 8.5,
-        "number_of_reviews": 132,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "03.10.2025",
-        "link": "https://www.booking.com/hotel/ge/gudaski-apartments.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/181389694.jpg?k=ffdb7afa6a5e20ade4d00508e4ed52cdcc7148bfbd596c71e95b8a243774c655&o="
+        "name": {
+            "03.10.2025": "GUDASKI Apartments, New Gudauri LOFT2 & LOFT1"
+        },
+        "stars": {
+            "03.10.2025": 3
+        },
+        "rating": {
+            "03.10.2025": 8.5
+        },
+        "number_of_reviews": {
+            "03.10.2025": 132
+        },
+        "district": {
+            "03.10.2025": null
+        },
+        "city": {
+            "03.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "03.10.2025": false
+        },
+        "link": {
+            "03.10.2025": "https://www.booking.com/hotel/ge/gudaski-apartments.html"
+        },
+        "foto": {
+            "03.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/181389694.jpg?k=ffdb7afa6a5e20ade4d00508e4ed52cdcc7148bfbd596c71e95b8a243774c655&o="
+        }
     },
     {
         "id": "tsiga",
-        "name": "Hotel Tsiga",
-        "stars": 4,
-        "rating": 9.5,
-        "number_of_reviews": 285,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "21.10.2025",
-        "link": "https://www.booking.com/hotel/ge/tsiga.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/333665885.jpg?k=f0da289846b255dc21fa77c1d804035159d2a51710d09124e6abf0c4e61b16f9&o="
+        "name": {
+            "21.10.2025": "Hotel Tsiga"
+        },
+        "stars": {
+            "21.10.2025": 4
+        },
+        "rating": {
+            "21.10.2025": 9.5
+        },
+        "number_of_reviews": {
+            "21.10.2025": 285
+        },
+        "district": {
+            "21.10.2025": null
+        },
+        "city": {
+            "21.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "21.10.2025": false
+        },
+        "link": {
+            "21.10.2025": "https://www.booking.com/hotel/ge/tsiga.html"
+        },
+        "foto": {
+            "21.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/333665885.jpg?k=f0da289846b255dc21fa77c1d804035159d2a51710d09124e6abf0c4e61b16f9&o="
+        }
     },
     {
         "id": "skytop-studios",
-        "name": "SkyTop Studios",
-        "stars": 3,
-        "rating": 8.3,
-        "number_of_reviews": 17,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "21.10.2025",
-        "link": "https://www.booking.com/hotel/ge/skytop-studios.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/213835080.jpg?k=fcca299ac6ba508e56ed94f1e9aa56f8896e4e4bafbf45dfc0e0c05f9497ab09&o="
+        "name": {
+            "21.10.2025": "SkyTop Studios"
+        },
+        "stars": {
+            "21.10.2025": 3
+        },
+        "rating": {
+            "21.10.2025": 8.3
+        },
+        "number_of_reviews": {
+            "21.10.2025": 17
+        },
+        "district": {
+            "21.10.2025": null
+        },
+        "city": {
+            "21.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "21.10.2025": false
+        },
+        "link": {
+            "21.10.2025": "https://www.booking.com/hotel/ge/skytop-studios.html"
+        },
+        "foto": {
+            "21.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/213835080.jpg?k=fcca299ac6ba508e56ed94f1e9aa56f8896e4e4bafbf45dfc0e0c05f9497ab09&o="
+        }
     },
     {
         "id": "new-gudauri-loft-2-mano-1",
-        "name": "New Gudauri Loft 2 - \"Mano\", near ski lift Gondola",
-        "stars": 3,
-        "rating": 9.2,
-        "number_of_reviews": 18,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "21.10.2025",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-mano-1.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/227789225.jpg?k=df848128d68eb232b7db71edd69837cf9e19b133cf49b6f8de2a7628a01d5278&o="
+        "name": {
+            "21.10.2025": "New Gudauri Loft 2 - \"Mano\", near ski lift Gondola"
+        },
+        "stars": {
+            "21.10.2025": 3
+        },
+        "rating": {
+            "21.10.2025": 9.2
+        },
+        "number_of_reviews": {
+            "21.10.2025": 18
+        },
+        "district": {
+            "21.10.2025": null
+        },
+        "city": {
+            "21.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "21.10.2025": false
+        },
+        "link": {
+            "21.10.2025": "https://www.booking.com/hotel/ge/new-gudauri-loft-2-mano-1.html"
+        },
+        "foto": {
+            "21.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/227789225.jpg?k=df848128d68eb232b7db71edd69837cf9e19b133cf49b6f8de2a7628a01d5278&o="
+        }
     },
     {
         "id": "ereto",
-        "name": "Ereto Hotel by SnowTime",
-        "stars": 4,
-        "rating": 8.2,
-        "number_of_reviews": 192,
-        "district": null,
-        "city": "Gudauri",
-        "new_mark": false,
         "date_parsed": "21.10.2025",
-        "link": "https://www.booking.com/hotel/ge/ereto.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/218978822.jpg?k=97e056b76f078c6b26313c4045bda7c8747c37e8751c5fec1a4d089da6158023&o="
+        "name": {
+            "21.10.2025": "Ereto Hotel by SnowTime"
+        },
+        "stars": {
+            "21.10.2025": 4
+        },
+        "rating": {
+            "21.10.2025": 8.2
+        },
+        "number_of_reviews": {
+            "21.10.2025": 192
+        },
+        "district": {
+            "21.10.2025": null
+        },
+        "city": {
+            "21.10.2025": "Gudauri"
+        },
+        "new_mark": {
+            "21.10.2025": false
+        },
+        "link": {
+            "21.10.2025": "https://www.booking.com/hotel/ge/ereto.html"
+        },
+        "foto": {
+            "21.10.2025": "https://cf.bstatic.com/xdata/images/hotel/square240/218978822.jpg?k=97e056b76f078c6b26313c4045bda7c8747c37e8751c5fec1a4d089da6158023&o="
+        }
     },
     {
         "id": "hotel-carpe-diem-gudauri",
-        "name": "Hotel Carpe Diem Gudauri",
-        "stars": 4,
-        "rating": 7.3,
-        "number_of_reviews": 473,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/hotel-carpe-diem-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/527475013.jpg?k=cd8cc420b255997a1a2fddf2df1f96793b6b2b5aeaca09a4cbdbdce35750e689&o="
+        "name": {
+            "28.03.2026": "Hotel Carpe Diem Gudauri"
+        },
+        "stars": {
+            "28.03.2026": 4
+        },
+        "rating": {
+            "28.03.2026": 7.3
+        },
+        "number_of_reviews": {
+            "28.03.2026": 473
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/hotel-carpe-diem-gudauri.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/527475013.jpg?k=cd8cc420b255997a1a2fddf2df1f96793b6b2b5aeaca09a4cbdbdce35750e689&o="
+        }
     },
     {
         "id": "dandelion-gudauri-gudauri",
-        "name": "Dandelion Hotel Gudauri",
-        "stars": 3,
-        "rating": 9.0,
-        "number_of_reviews": 199,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/dandelion-gudauri-gudauri.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/819352933.jpg?k=4fadf85f11fdc1312dd23d95113ed8ed7a7860fe267d9142c0da8faf562ffc3f&o="
+        "name": {
+            "28.03.2026": "Dandelion Hotel Gudauri"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 9.0
+        },
+        "number_of_reviews": {
+            "28.03.2026": 199
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/dandelion-gudauri-gudauri.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/819352933.jpg?k=4fadf85f11fdc1312dd23d95113ed8ed7a7860fe267d9142c0da8faf562ffc3f&o="
+        }
     },
     {
         "id": "new-gudauri-gudauri12345",
-        "name": "New Gudauri M&N",
-        "stars": 3,
-        "rating": 9.2,
-        "number_of_reviews": 41,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/new-gudauri-gudauri12345.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/178933989.jpg?k=608237b18e6a0dac987ad14bc7131bd47fa199348d8d3550dfb2d8466c533283&o="
+        "name": {
+            "28.03.2026": "New Gudauri M&N"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 9.2
+        },
+        "number_of_reviews": {
+            "28.03.2026": 41
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/new-gudauri-gudauri12345.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/178933989.jpg?k=608237b18e6a0dac987ad14bc7131bd47fa199348d8d3550dfb2d8466c533283&o="
+        }
     },
     {
         "id": "quot-truso-quot",
-        "name": "Hotel Truso",
-        "stars": 3,
-        "rating": 8.6,
-        "number_of_reviews": 40,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/quot-truso-quot.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/418940237.jpg?k=a1d563b3505a018b146a98e7212827aad93a691f246184343d70e3b3506d8257&o="
+        "name": {
+            "28.03.2026": "Hotel Truso"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 8.6
+        },
+        "number_of_reviews": {
+            "28.03.2026": 40
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/quot-truso-quot.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/418940237.jpg?k=a1d563b3505a018b146a98e7212827aad93a691f246184343d70e3b3506d8257&o="
+        }
     },
     {
         "id": "atrium-exclusive-ski4life",
-        "name": "Atrium Exclusive - Ski4Life",
-        "stars": 3,
-        "rating": 9.0,
-        "number_of_reviews": 18,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/atrium-exclusive-ski4life.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/228481765.jpg?k=882a26189c2a0c22ca4209c15243248bec859eec49879260deb16b2c59a531fb&o="
+        "name": {
+            "28.03.2026": "Atrium Exclusive - Ski4Life"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 9.0
+        },
+        "number_of_reviews": {
+            "28.03.2026": 18
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/atrium-exclusive-ski4life.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/228481765.jpg?k=882a26189c2a0c22ca4209c15243248bec859eec49879260deb16b2c59a531fb&o="
+        }
     },
     {
         "id": "amp-spa-tsar",
-        "name": "Tsar Bani Spa Resort",
-        "stars": 0,
-        "rating": 7.9,
-        "number_of_reviews": 255,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/amp-spa-tsar.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/238483763.jpg?k=eb7e5e959a6bb2f4c0270f245722ab88c0de195a9023ddb5a7cf3dc0ed9a9cd8&o="
+        "name": {
+            "28.03.2026": "Tsar Bani Spa Resort"
+        },
+        "stars": {
+            "28.03.2026": 0
+        },
+        "rating": {
+            "28.03.2026": 7.9
+        },
+        "number_of_reviews": {
+            "28.03.2026": 255
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/amp-spa-tsar.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/238483763.jpg?k=eb7e5e959a6bb2f4c0270f245722ab88c0de195a9023ddb5a7cf3dc0ed9a9cd8&o="
+        }
     },
     {
         "id": "flat-in-gudauri-centre",
-        "name": "Luxury Apartments With Ski Lift View in Neo New Gudauri",
-        "stars": 3,
-        "rating": 8.9,
-        "number_of_reviews": 32,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/flat-in-gudauri-centre.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/505747646.jpg?k=e4b659ce0a953498542c1e558f2e1539daab818058600f2cde7a7360cdf52bca&o="
+        "name": {
+            "28.03.2026": "Luxury Apartments With Ski Lift View in Neo New Gudauri"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 8.9
+        },
+        "number_of_reviews": {
+            "28.03.2026": 32
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/flat-in-gudauri-centre.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/505747646.jpg?k=e4b659ce0a953498542c1e558f2e1539daab818058600f2cde7a7360cdf52bca&o="
+        }
     },
     {
         "id": "nino-39-s-rooms",
-        "name": "Nino's Rooms",
-        "stars": 0,
-        "rating": 9.5,
-        "number_of_reviews": 19,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/nino-39-s-rooms.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/611474712.jpg?k=5a242d4d5b247b561e15b1e98a11a3f1fe283b3731255a657283c6c8e5c34cd0&o="
+        "name": {
+            "28.03.2026": "Nino's Rooms"
+        },
+        "stars": {
+            "28.03.2026": 0
+        },
+        "rating": {
+            "28.03.2026": 9.5
+        },
+        "number_of_reviews": {
+            "28.03.2026": 19
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/nino-39-s-rooms.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/611474712.jpg?k=5a242d4d5b247b561e15b1e98a11a3f1fe283b3731255a657283c6c8e5c34cd0&o="
+        }
     },
     {
         "id": "gudauri-atrium-suites",
-        "name": "Gudauri, Atrium Suites",
-        "stars": 3,
-        "rating": 9.1,
-        "number_of_reviews": 51,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/gudauri-atrium-suites.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/265748986.jpg?k=4a3574af40af9db0a700cf2e48a39bceb6ae0541483c9820396ee70ecc9ab1b0&o="
+        "name": {
+            "28.03.2026": "Gudauri, Atrium Suites"
+        },
+        "stars": {
+            "28.03.2026": 3
+        },
+        "rating": {
+            "28.03.2026": 9.1
+        },
+        "number_of_reviews": {
+            "28.03.2026": 51
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/gudauri-atrium-suites.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/265748986.jpg?k=4a3574af40af9db0a700cf2e48a39bceb6ae0541483c9820396ee70ecc9ab1b0&o="
+        }
     },
     {
         "id": "montisio",
-        "name": "MontiSio Boutique Hotel",
-        "stars": 5,
-        "rating": 9.7,
-        "number_of_reviews": 42,
-        "district": null,
-        "city": null,
-        "new_mark": true,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/montisio.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/803830387.jpg?k=8cec7578e007f1d068dd92f165fa85f2f52341f892785e5799a1ee978c7fbaa7&o="
+        "name": {
+            "28.03.2026": "MontiSio Boutique Hotel"
+        },
+        "stars": {
+            "28.03.2026": 5
+        },
+        "rating": {
+            "28.03.2026": 9.7
+        },
+        "number_of_reviews": {
+            "28.03.2026": 42
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": true
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/montisio.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/803830387.jpg?k=8cec7578e007f1d068dd92f165fa85f2f52341f892785e5799a1ee978c7fbaa7&o="
+        }
     },
     {
         "id": "gudauri-diamond",
-        "name": "Gudauri Diamond",
-        "stars": 4,
-        "rating": 9.4,
-        "number_of_reviews": 261,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "28.03.2026",
-        "link": "https://www.booking.com/hotel/ge/gudauri-diamond.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/242665839.jpg?k=6120451356203a97ec5aa9158d7224509e71a502cd1cf93c4e62275e78f7046d&o="
+        "name": {
+            "28.03.2026": "Gudauri Diamond"
+        },
+        "stars": {
+            "28.03.2026": 4
+        },
+        "rating": {
+            "28.03.2026": 9.4
+        },
+        "number_of_reviews": {
+            "28.03.2026": 261
+        },
+        "district": {
+            "28.03.2026": null
+        },
+        "city": {
+            "28.03.2026": null
+        },
+        "new_mark": {
+            "28.03.2026": false
+        },
+        "link": {
+            "28.03.2026": "https://www.booking.com/hotel/ge/gudauri-diamond.html"
+        },
+        "foto": {
+            "28.03.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/242665839.jpg?k=6120451356203a97ec5aa9158d7224509e71a502cd1cf93c4e62275e78f7046d&o="
+        }
     },
     {
         "id": "gudauri-apartments-gudauri3",
-        "name": "Premium New Gudauri Apartments with Balcony & Gondola Views",
-        "stars": 3,
-        "rating": 0.0,
-        "number_of_reviews": 0,
-        "district": null,
-        "city": null,
-        "new_mark": false,
         "date_parsed": "07.04.2026",
-        "link": "https://www.booking.com/hotel/ge/gudauri-apartments-gudauri3.html",
-        "foto": "https://cf.bstatic.com/xdata/images/hotel/square240/843502000.jpg?k=ae585e907efbc5b54081e63175a136ea1c8666902e15ef73d499ac18b6ab870c&o="
+        "name": {
+            "07.04.2026": "Premium New Gudauri Apartments with Balcony & Gondola Views"
+        },
+        "stars": {
+            "07.04.2026": 3
+        },
+        "rating": {
+            "07.04.2026": 0.0
+        },
+        "number_of_reviews": {
+            "07.04.2026": 0
+        },
+        "district": {
+            "07.04.2026": null
+        },
+        "city": {
+            "07.04.2026": null
+        },
+        "new_mark": {
+            "07.04.2026": false
+        },
+        "link": {
+            "07.04.2026": "https://www.booking.com/hotel/ge/gudauri-apartments-gudauri3.html"
+        },
+        "foto": {
+            "07.04.2026": "https://cf.bstatic.com/xdata/images/hotel/square240/843502000.jpg?k=ae585e907efbc5b54081e63175a136ea1c8666902e15ef73d499ac18b6ab870c&o="
+        }
     }
 ]

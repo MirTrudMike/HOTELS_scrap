@@ -2,7 +2,7 @@ import os
 import pygsheets as pg
 from environs import Env
 from loguru import logger
-from scraper.models import HotelData
+from scraper.models import HotelRecord
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,11 +25,12 @@ class GoogleSheetsManager:
         key_path = env('KEY_PATH')
         return sheet_id, os.path.join(PROJECT_ROOT, 'config', key_path)
 
-    def update(self, new_data: list[HotelData], city: str):
+    def update(self, new_records: list[HotelRecord], city: str):
+        """Append newly discovered hotels (latest values) to the city worksheet."""
         try:
             spreadsheet = self._client.open_by_key(self._sheet_id)
             sheet, is_new = self._get_or_create_worksheet(spreadsheet, city)
-            data_matrix = [h.to_list() for h in new_data]
+            data_matrix = [r.to_sheets_row() for r in new_records]
 
             if is_new:
                 start_row = 2  # row 1 is headers
